@@ -4,9 +4,15 @@
       <div class="lusive-box"> <!--专属优选-->
         <div class="tlusive">
           <h2 class="tlusive-list font-24">专属优选</h2>
-          <div class="icon"></div>
+          <div class="icon-zs"></div>
         </div>
-        <div class="blusive"></div>
+        <div class="blusive">
+          <ul></ul>
+          <div class="icon-jzlc"></div>
+          <img src="image/jzlc">
+          <div class="icon-jzlc"></div>
+          <ul></ul>
+        </div>
       </div><!--专属优选-->
       <div class="price"><!--服务价格-->
 
