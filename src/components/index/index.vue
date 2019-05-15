@@ -63,6 +63,7 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+@import '~@/static/css/common.less';
 .banner{
     position: relative;
     color: #000;

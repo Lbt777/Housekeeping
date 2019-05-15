@@ -5,21 +5,22 @@ import nanny from '@/components/nanny'
 Vue.use(Router)
 
 export default new Router({
-mode: 'history',
-routes: [
-  {
-    path: '/',
-    components: {
-      index: index
-    }
-  },
-  {
-    path: '/nanny',
-    components: {
-      nanny: nanny
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      components: {
+        default: index,
+        index: index
+      }
     },
-    meta: {
-      title: '保姆'
-    }
-  }]
+    {
+      path: '/nanny',
+      components: {
+        nanny: nanny
+      },
+      meta: {
+        title: '保姆'
+      }
+    }]
 })
