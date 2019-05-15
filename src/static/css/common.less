@@ -1,5 +1,5 @@
-@import "./public.less";
 //公共样式
+@import "./public.less";
 *{
   padding: 0;
   margin: 0;
@@ -11,34 +11,21 @@ body {
   font-size: 16px;/*默认字体*/
   color: #ccc;
   min-width: 1200px;
+  background-color: #F0F0F0;
   font-family:"微软雅黑,arial,helvetica,sans-serif";
 }
 li{
   list-style: none;
+  float: left;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 .container{
   max-width: 1200px;
   margin:0 auto;
 }
-//字体 背景颜色
-@darkorangeColor:#FF7124;
-@grayColor:#555;
-@orangeColor:#ff7225;
-@darkgreyColor:#333;
-@darkgrey:#666;
-@whiteColor:#fff;
-@grayorangeColor:#e95513;
-@blueColor:rgb(85, 185, 255);
-@lightorangeColor:rgb(255, 115, 92);
-@bglightdark:#F0F0F0;
-@borderdark:#808080;
-@number-5: unit(5,px);
-@number-10: unit(10,px);
-@number-15: unit(15,px);
-@number-20: unit(20,px);
-@number-25: unit(25,px);
-@number-30: unit(30,px);
-
 //左右浮动 清除浮动
 .fl{
   float: left;
@@ -54,8 +41,6 @@ li{
 .clearfix{
   clear: both;
 }
-
-
 /*字体*/
 .font-12{
   font-size: 12px;
@@ -267,14 +252,3 @@ padding-t-30{
 padding-b-30{
   padding-bottom: @number-30;
 }
-
-//精灵图
-
-//精灵图.icon{
-//  background: url("../images/icon.png") no-repeat;
-//  display: inline-block;
-//}
-
-
-
-
