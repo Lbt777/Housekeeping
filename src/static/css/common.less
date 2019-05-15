@@ -1,0 +1,280 @@
+@import "./common.less";
+//公共样式
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;/*默认字体*/
+  color: #ccc;
+  min-width: 1200px;
+  font-family:"微软雅黑,arial,helvetica,sans-serif";
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1200px;
+  margin:0 auto;
+}
+//字体 背景颜色
+@darkorangeColor:#FF7124;
+@grayColor:#555;
+@orangeColor:#ff7225;
+@darkgreyColor:#333;
+@darkgrey:#666;
+@whiteColor:#fff;
+@grayorangeColor:#e95513;
+@blueColor:rgb(85, 185, 255);
+@lightorangeColor:rgb(255, 115, 92);
+@bglightdark:#F0F0F0;
+@borderdark:#808080;
+@number-5: unit(5,px);
+@number-10: unit(10,px);
+@number-15: unit(15,px);
+@number-20: unit(20,px);
+@number-25: unit(25,px);
+@number-30: unit(30,px);
+
+//左右浮动 清除浮动
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:after{
+  content:'';
+  clear: both;
+  display: block;
+}
+.clearfix{
+  clear: both;
+}
+
+
+/*字体*/
+.font-12{
+  font-size: 12px;
+}
+.font-14{
+  font-size: 14px;
+}
+.font-16{
+  font-size: 16px;
+}
+.font-18{
+  font-size: 18px;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-22{
+  font-size: 22px;
+}
+.font-24{
+  font-size: 24px;
+}
+.font-30{
+  font-size: 30px;
+}
+.font-36{
+  font-size: 36px;
+}
+
+//padding
+padding-5{
+  padding: @number-5;
+}
+padding-l-5{
+  padding-left: @number-5;
+}
+padding-r-5{
+  padding-right: @number-5;
+}
+padding-t-5{
+  padding-top: @number-5;
+}
+padding-b-5{
+  padding-bottom: @number-5;
+}
+padding-10{
+  padding: @number-10;
+}
+padding-l-10{
+  padding-left: @number-10;
+}
+padding-r-10{
+  padding-right: @number-10;
+}
+padding-t-10{
+  padding-top: @number-10;
+}
+padding-b-10{
+  padding-bottom: @number-10;
+}
+padding-15{
+  padding: @number-15;
+}
+padding-l-15{
+  padding-left: @number-15;
+}
+padding-r-15{
+  padding-right: @number-15;
+}
+padding-t-15{
+  padding-top: @number-15;
+}
+padding-b-15{
+  padding-bottom: @number-15;
+}
+padding-20{
+  padding: @number-20;
+}
+padding-l-20{
+  padding-left: @number-20;
+}
+padding-r-20{
+  padding-right: @number-20;
+}
+padding-t-20{
+  padding-top: @number-20;
+}
+padding-b-20{
+  padding-bottom: @number-20;
+}
+padding-25{
+  padding: @number-25;
+}
+padding-l-25{
+  padding-left: @number-25;
+}
+padding-r-25{
+  padding-right: @number-25;
+}
+padding-t-25{
+  padding-top: @number-25;
+}
+padding-b-25{
+  padding-bottom: @number-25;
+}
+padding-30{
+  padding: @number-30;
+}
+padding-l-30{
+  padding-left: @number-30;
+}
+padding-r-30{
+  padding-right: @number-30;
+}
+padding-t-30{
+  padding-top: @number-30;
+}
+padding-b-30{
+  padding-bottom: @number-30;
+}
+//margin
+margin-5{
+  margin: @number-5;
+}
+margin-l-5{
+  margin-left: @number-5;
+}
+margin-r-5{
+  margin-right: @number-5;
+}
+margin-t-5{
+  margin-top: @number-5;
+}
+margin-b-5{
+  margin-bottom: @number-5;
+}
+margin-10{
+  margin: @number-10;
+}
+margin-l-10{
+  margin-left: @number-10;
+}
+margin-r-10{
+  margin-right: @number-10;
+}
+margin-t-10{
+  margin-top: @number-10;
+}
+margin-b-10{
+  margin-bottom: @number-10;
+}
+margin-15{
+  margin: @number-15;
+}
+margin-l-15{
+  margin-left: @number-15;
+}
+margin-r-15{
+  margin-right: @number-15;
+}
+margin-t-15{
+  margin-top: @number-15;
+}
+margin-b-15{
+  margin-bottom: @number-15;
+}
+margin-20{
+  margin: @number-20;
+}
+margin-l-20{
+  margin-left: @number-20;
+}
+margin-r-20{
+  margin-right: @number-20;
+}
+margin-t-20{
+  margin-top: @number-20;
+}
+margin-b-20{
+  margin-bottom: @number-20;
+}
+margin-25{
+  margin: @number-25;
+}
+margin-l-25{
+  margin-left: @number-25;
+}
+margin-r-25{
+  margin-right: @number-25;
+}
+margin-t-25{
+  margin-top: @number-25;
+}
+margin-b-25{
+  margin-bottom: @number-25;
+}
+margin-30{
+  margin: @number-30;
+}
+padding-l-30{
+  padding-left: @number-30;
+}
+padding-r-30{
+  padding-right: @number-30;
+}
+padding-t-30{
+  padding-top: @number-30;
+}
+padding-b-30{
+  padding-bottom: @number-30;
+}
+
+//精灵图
+
+.icon{
+  background: url("../images/icon.png") no-repeat;
+  display: inline-block;
+}
+
+
+
+
