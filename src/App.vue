@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view name="index"></router-view>
+    <router-view name="housekeeping"></router-view>
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 export default {
   name: 'App'
 }
+
 </script>
 
 <style>
