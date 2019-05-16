@@ -1,29 +1,29 @@
 import Vue from 'vue'
-// è·¯ç”±ç»„ä»¶
+// Â·ÓÉ×é¼ş
 import Router from 'vue-router'
-// ä¸»é¡µ
+// Ö÷Ò³
 import index from 'com/index'
-// å®¶æ”¿é¡µé¢
+// ¼ÒÕşÒ³Ãæ
 import housekeeping from 'com/housekeeping'
-// æœˆå«‚é¡µé¢
+// ÔÂÉ©Ò³Ãæ
 import maternity from 'com/maternity'
-// å‚¬ä¹³å¸ˆé¡µé¢
+// ´ßÈéÊ¦Ò³Ãæ
 import lactation from 'com/lactation'
-// ä¿å§†é¡µé¢
+// ±£Ä·Ò³Ãæ
 import nanny from 'com/nanny'
-// è‚²å„¿å«‚é¡µé¢
+// Óı¶ùÉ©Ò³Ãæ
 import parenting from 'com/parenting'
-// åŸå¸‚åˆä½œé¡µé¢
+// ³ÇÊĞºÏ×÷Ò³Ãæ
 import cooperation from 'com/cooperation'
-// å…³äºæˆ‘ä»¬
+// ¹ØÓÚÎÒÃÇ
 import about from 'com/about'
-// æœåŠ¡æ‰¿è¯º
+// ·şÎñ³ĞÅµ
 import promise from 'com/promise'
-// å®‰å…¨ä¿éšœ
+// °²È«±£ÕÏ
 import security from 'com/security'
-// ä¸ªäººä¸­å¿ƒ
+// ¸öÈËÖĞĞÄ
 import personal from 'com/personal'
-// åœ¨çº¿é¢„çº¦
+// ÔÚÏßÔ¤Ô¼
 import subscribe from 'com/subscribe'
 
 Vue.use(Router)
@@ -38,7 +38,7 @@ export default new Router({
         index: index
       },
       meta: {
-        title: 'eå®¶æ”¿ - ä½ è´Ÿè´£ç¾è²Œå¦‚èŠ±,æˆ‘è´Ÿè´£é˜¿å§¨åˆ°å®¶'
+        title: 'e¼ÒÕş - Äã¸ºÔğÃÀÃ²Èç»¨,ÎÒ¸ºÔğ°¢ÒÌµ½¼Ò'
       }
     },
     {
@@ -48,7 +48,7 @@ export default new Router({
         housekeeping: housekeeping
       },
       meta: {
-        title: 'eå®¶æ”¿ - å…¨æ–¹é¢çš„å®¶æ”¿æœåŠ¡é¡¹ç›®,æ–°ç”¨æˆ·é¦–å•äº«ä¼˜æƒ '
+        title: 'e¼ÒÕş - È«·½ÃæµÄ¼ÒÕş·şÎñÏîÄ¿,ĞÂÓÃ»§Ê×µ¥ÏíÓÅ»İ'
       }
     },
     {
@@ -58,7 +58,7 @@ export default new Router({
         maternity: maternity
       },
       meta: {
-        title: 'eå®¶æ”¿ - è¶…äº”å¹´æœˆå«‚å·¥ä½œç»éªŒ,ä¸“ä¸šå®‰å…¨çš„æ–°ç”Ÿå„¿æŠ¤ç†ã€äº§å¦‡æŠ¤ç†'
+        title: 'e¼ÒÕş - ³¬ÎåÄêÔÂÉ©¹¤×÷¾­Ñé,×¨Òµ°²È«µÄĞÂÉú¶ù»¤Àí¡¢²ú¸¾»¤Àí'
       }
     },
     {
@@ -68,7 +68,7 @@ export default new Router({
         lactation: lactation
       },
       meta: {
-        title: 'eå®¶æ”¿ - äº§å¦‡å‚¬ä¹³å¸ˆè§£å†³æ¯ä¹³éš¾é¢˜,å…»å‡ºå¥åº·å®å®'
+        title: 'e¼ÒÕş - ²ú¸¾´ßÈéÊ¦½â¾öÄ¸ÈéÄÑÌâ,Ñø³ö½¡¿µ±¦±¦'
       }
     },
     {
@@ -78,7 +78,7 @@ export default new Router({
         parenting: parenting
       },
       meta: {
-        title: 'eå®¶æ”¿ - é€‰æ‹©ä¸“ä¸šè‚²å„¿å«‚,å¸®åŠ©å®å®å¥åº·å¿«ä¹æˆé•¿ '
+        title: 'e¼ÒÕş - Ñ¡Ôñ×¨ÒµÓı¶ùÉ©,°ïÖú±¦±¦½¡¿µ¿ìÀÖ³É³¤ '
       }
     },
     {
@@ -88,7 +88,7 @@ export default new Router({
         nanny: nanny
       },
       meta: {
-        title: 'eå®¶æ”¿ - é«˜ç«¯å…¨èŒç®¡å®¶ï¼Œå¼€å¯ä¿å§†è®¢åˆ¶æœåŠ¡'
+        title: 'e¼ÒÕş - ¸ß¶ËÈ«Ö°¹Ü¼Ò£¬¿ªÆô±£Ä·¶©ÖÆ·şÎñ'
       }
     },
     {
@@ -99,7 +99,7 @@ export default new Router({
         // nanny: nanny
       },
       meta: {
-        title: 'å®¶æ”¿åŠ ç›Ÿ_å®¶æ”¿å…¬å¸åŠ ç›Ÿ_å®¶æ”¿å…¬å¸åŠ ç›Ÿå¤šå°‘é’±_eå®¶æ”¿'
+        title: '¼ÒÕş¼ÓÃË_¼ÒÕş¹«Ë¾¼ÓÃË_¼ÒÕş¹«Ë¾¼ÓÃË¶àÉÙÇ®_e¼ÒÕş'
       }
     },
     {
@@ -109,7 +109,7 @@ export default new Router({
         about: about
       },
       meta: {
-        title: 'eå®¶æ”¿ - ç»™æ‚¨ä»‹ç»eå®¶æ”¿å…¬å¸æœåŠ¡é¡¹ç›®èŒƒå›´'
+        title: 'e¼ÒÕş - ¸øÄú½éÉÜe¼ÒÕş¹«Ë¾·şÎñÏîÄ¿·¶Î§'
       }
     },
     {
@@ -119,7 +119,7 @@ export default new Router({
         promise: promise
       },
       meta: {
-        title: 'eå®¶æ”¿ - æœåŠ¡æ‰¿è¯ºï¼šæ ‡å‡†åŒ–ä¸€å¯¹ä¸€å®šåˆ¶æœåŠ¡'
+        title: 'e¼ÒÕş - ·şÎñ³ĞÅµ£º±ê×¼»¯Ò»¶ÔÒ»¶¨ÖÆ·şÎñ'
       }
     },
     {
@@ -129,7 +129,7 @@ export default new Router({
         security: security
       },
       meta: {
-        title: 'eå®¶æ”¿ - å®åè®¤è¯ã€å¥åº·è®¤è¯ã€å®¶æ”¿ä¿é™©ã€ä¸“ä¸šåŸ¹è®­ '
+        title: 'e¼ÒÕş - ÊµÃûÈÏÖ¤¡¢½¡¿µÈÏÖ¤¡¢¼ÒÕş±£ÏÕ¡¢×¨ÒµÅàÑµ '
       }
     },
     {
@@ -139,7 +139,7 @@ export default new Router({
         personal: personal
       },
       meta: {
-        title: 'eå®¶æ”¿ - ä¸ªäººä¸­å¿ƒ'
+        title: 'e¼ÒÕş - ¸öÈËÖĞĞÄ'
       }
     },
     {
@@ -149,7 +149,7 @@ export default new Router({
         subscribe: subscribe
       },
       meta: {
-        title: 'eå®¶æ”¿ - åœ¨çº¿é¢„çº¦'
+        title: 'e¼ÒÕş - ÔÚÏßÔ¤Ô¼'
       }
     }]
 })

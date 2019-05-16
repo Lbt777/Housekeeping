@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <router-view></router-view>
+  <div id="app">
+    <router-view name="index"></router-view>
+    <router-view name="housekeeping"></router-view>
   </div>
 </template>
 
@@ -8,8 +9,8 @@
 export default {
   name: 'App'
 }
+
 </script>
 
-<style lang="less">
-@import './static/css/common.less';
+<style>
 </style>
