@@ -2,6 +2,8 @@
   <div id="app">
     <router-view name="index"></router-view>
     <router-view name="nanny"></router-view>
+    <router-view name="promise"></router-view>
+
   </div>
 </template>
 
