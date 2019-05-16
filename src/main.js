@@ -6,6 +6,13 @@ import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(Element)
+// 修改标题
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
+})
 /* eslint-disable no-new */
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
