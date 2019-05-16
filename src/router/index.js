@@ -15,15 +15,15 @@ import nanny from 'com/nanny'
 import parenting from 'com/parenting'
 // 城市合作页面
 import cooperation from 'com/cooperation'
-// 关于我们
+// 关于我们页面
 import about from 'com/about'
-// 服务承诺
+// 服务承诺页面
 import promise from 'com/promise'
-// 安全保障
+// 安全保障页面
 import security from 'com/security'
-// 个人中心
+// 个人中心页面
 import personal from 'com/personal'
-// 在线预约
+// 在线预约页面
 import subscribe from 'com/subscribe'
 
 Vue.use(Router)
