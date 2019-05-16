@@ -1,29 +1,29 @@
 import Vue from 'vue'
-// Â·ÓÉ×é¼ş
+// è·¯ç”±ç»„ä»¶
 import Router from 'vue-router'
-// Ö÷Ò³
+// ä¸»é¡µ
 import index from 'com/index'
-// ¼ÒÕşÒ³Ãæ
+// å®¶æ”¿é¡µé¢
 import housekeeping from 'com/housekeeping'
-// ÔÂÉ©Ò³Ãæ
+// æœˆå«‚é¡µé¢
 import maternity from 'com/maternity'
-// ´ßÈéÊ¦Ò³Ãæ
+// å‚¬ä¹³å¸ˆé¡µé¢
 import lactation from 'com/lactation'
-// ±£Ä·Ò³Ãæ
+// ä¿å§†é¡µé¢
 import nanny from 'com/nanny'
-// Óı¶ùÉ©Ò³Ãæ
+// è‚²å„¿å«‚é¡µé¢
 import parenting from 'com/parenting'
-// ³ÇÊĞºÏ×÷Ò³Ãæ
+// åŸå¸‚åˆä½œé¡µé¢
 import cooperation from 'com/cooperation'
-// ¹ØÓÚÎÒÃÇÒ³Ãæ
+// å…³äºæˆ‘ä»¬é¡µé¢
 import about from 'com/about'
-// ·şÎñ³ĞÅµÒ³Ãæ
+// æœåŠ¡æ‰¿è¯ºé¡µé¢
 import promise from 'com/promise'
-// °²È«±£ÕÏÒ³Ãæ
+// å®‰å…¨ä¿éšœé¡µé¢
 import security from 'com/security'
-// ¸öÈËÖĞĞÄÒ³Ãæ
+// ä¸ªäººä¸­å¿ƒé¡µé¢
 import personal from 'com/personal'
-// ÔÚÏßÔ¤Ô¼Ò³Ãæ
+// åœ¨çº¿é¢„çº¦é¡µé¢
 import subscribe from 'com/subscribe'
 
 Vue.use(Router)
@@ -38,7 +38,7 @@ export default new Router({
         index: index
       },
       meta: {
-        title: 'e¼ÒÕş - Äã¸ºÔğÃÀÃ²Èç»¨,ÎÒ¸ºÔğ°¢ÒÌµ½¼Ò'
+        title: 'eå®¶æ”¿ - ä½ è´Ÿè´£ç¾è²Œå¦‚èŠ±,æˆ‘è´Ÿè´£é˜¿å§¨åˆ°å®¶'
       }
     },
     {
@@ -48,7 +48,7 @@ export default new Router({
         housekeeping: housekeeping
       },
       meta: {
-        title: 'e¼ÒÕş - È«·½ÃæµÄ¼ÒÕş·şÎñÏîÄ¿,ĞÂÓÃ»§Ê×µ¥ÏíÓÅ»İ'
+        title: 'eå®¶æ”¿ - å…¨æ–¹é¢çš„å®¶æ”¿æœåŠ¡é¡¹ç›®,æ–°ç”¨æˆ·é¦–å•äº«ä¼˜æƒ '
       }
     },
     {
@@ -58,7 +58,7 @@ export default new Router({
         maternity: maternity
       },
       meta: {
-        title: 'e¼ÒÕş - ³¬ÎåÄêÔÂÉ©¹¤×÷¾­Ñé,×¨Òµ°²È«µÄĞÂÉú¶ù»¤Àí¡¢²ú¸¾»¤Àí'
+        title: 'eå®¶æ”¿ - è¶…äº”å¹´æœˆå«‚å·¥ä½œç»éªŒ,ä¸“ä¸šå®‰å…¨çš„æ–°ç”Ÿå„¿æŠ¤ç†ã€äº§å¦‡æŠ¤ç†'
       }
     },
     {
@@ -68,7 +68,7 @@ export default new Router({
         lactation: lactation
       },
       meta: {
-        title: 'e¼ÒÕş - ²ú¸¾´ßÈéÊ¦½â¾öÄ¸ÈéÄÑÌâ,Ñø³ö½¡¿µ±¦±¦'
+        title: 'eå®¶æ”¿ - äº§å¦‡å‚¬ä¹³å¸ˆè§£å†³æ¯ä¹³éš¾é¢˜,å…»å‡ºå¥åº·å®å®'
       }
     },
     {
@@ -78,7 +78,7 @@ export default new Router({
         parenting: parenting
       },
       meta: {
-        title: 'e¼ÒÕş - Ñ¡Ôñ×¨ÒµÓı¶ùÉ©,°ïÖú±¦±¦½¡¿µ¿ìÀÖ³É³¤ '
+        title: 'eå®¶æ”¿ - é€‰æ‹©ä¸“ä¸šè‚²å„¿å«‚,å¸®åŠ©å®å®å¥åº·å¿«ä¹æˆé•¿ '
       }
     },
     {
@@ -88,7 +88,7 @@ export default new Router({
         nanny: nanny
       },
       meta: {
-        title: 'e¼ÒÕş - ¸ß¶ËÈ«Ö°¹Ü¼Ò£¬¿ªÆô±£Ä·¶©ÖÆ·şÎñ'
+        title: 'eå®¶æ”¿ - é«˜ç«¯å…¨èŒç®¡å®¶ï¼Œå¼€å¯ä¿å§†è®¢åˆ¶æœåŠ¡'
       }
     },
     {
@@ -96,10 +96,9 @@ export default new Router({
       components: {
         default: cooperation,
         cooperation: cooperation
-        // nanny: nanny
       },
       meta: {
-        title: '¼ÒÕş¼ÓÃË_¼ÒÕş¹«Ë¾¼ÓÃË_¼ÒÕş¹«Ë¾¼ÓÃË¶àÉÙÇ®_e¼ÒÕş'
+        title: 'å®¶æ”¿åŠ ç›Ÿ_å®¶æ”¿å…¬å¸åŠ ç›Ÿ_å®¶æ”¿å…¬å¸åŠ ç›Ÿå¤šå°‘é’±_eå®¶æ”¿'
       }
     },
     {
@@ -109,7 +108,7 @@ export default new Router({
         about: about
       },
       meta: {
-        title: 'e¼ÒÕş - ¸øÄú½éÉÜe¼ÒÕş¹«Ë¾·şÎñÏîÄ¿·¶Î§'
+        title: 'eå®¶æ”¿ - ç»™æ‚¨ä»‹ç»eå®¶æ”¿å…¬å¸æœåŠ¡é¡¹ç›®èŒƒå›´'
       }
     },
     {
@@ -119,7 +118,7 @@ export default new Router({
         promise: promise
       },
       meta: {
-        title: 'e¼ÒÕş - ·şÎñ³ĞÅµ£º±ê×¼»¯Ò»¶ÔÒ»¶¨ÖÆ·şÎñ'
+        title: 'eå®¶æ”¿ - æœåŠ¡æ‰¿è¯ºï¼šæ ‡å‡†åŒ–ä¸€å¯¹ä¸€å®šåˆ¶æœåŠ¡'
       }
     },
     {
@@ -129,7 +128,7 @@ export default new Router({
         security: security
       },
       meta: {
-        title: 'e¼ÒÕş - ÊµÃûÈÏÖ¤¡¢½¡¿µÈÏÖ¤¡¢¼ÒÕş±£ÏÕ¡¢×¨ÒµÅàÑµ '
+        title: 'eå®¶æ”¿ - å®åè®¤è¯ã€å¥åº·è®¤è¯ã€å®¶æ”¿ä¿é™©ã€ä¸“ä¸šåŸ¹è®­ '
       }
     },
     {
@@ -139,7 +138,7 @@ export default new Router({
         personal: personal
       },
       meta: {
-        title: 'e¼ÒÕş - ¸öÈËÖĞĞÄ'
+        title: 'eå®¶æ”¿ - ä¸ªäººä¸­å¿ƒ'
       }
     },
     {
@@ -149,7 +148,7 @@ export default new Router({
         subscribe: subscribe
       },
       meta: {
-        title: 'e¼ÒÕş - ÔÚÏßÔ¤Ô¼'
+        title: 'eå®¶æ”¿ - åœ¨çº¿é¢„çº¦'
       }
     }]
 })
