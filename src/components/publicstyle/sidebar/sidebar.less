@@ -1,0 +1,64 @@
+.sidebar{
+    overflow: inherit;
+    z-index: 999;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    width: 67px;
+    margin-top: -90px;
+    li{
+        width: 100%;
+        height: 56px;
+        margin-top: 5px;
+        background: #e6e6e6;
+        cursor: pointer;
+        .img-box{
+            height: 66%;
+            margin: auto;
+            margin-top: 9px;
+            background: url(./img/icon-slide.png) no-repeat;
+        }
+        .frist{
+            width: 54%;
+            margin-top: 15px;
+            background-position: -42px -40px;
+        }
+        .sed{
+            width: 27%;
+            margin-top: 12px;
+            background-position: -42px 0;
+        }
+    }
+}
+.top img{
+    height: 100%;
+    width: 100%;
+}
+.one:hover,.two:hover{
+    background: @grayorangeColor;
+}
+.one:hover .frist{
+    background-position: 0 -40px;
+}
+.two:hover .sed{
+    background-position: 0 0;
+}
+ul{
+    position: relative;
+}
+.cover{
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: -180px;
+    z-index: 999;
+    text-align: center;
+    transform: scale(0);
+    transition: All 0.4s ease-in-out;
+}
+.one:hover .cover{
+    transform: scale(1);
+}
+.two:hover .cover{
+    transform: scale(1);
+}
