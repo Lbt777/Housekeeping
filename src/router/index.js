@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import index from '@/components/index'
 import housekeeping from '@/components/housekeeping'
+import maternity from '@/components/maternity'
 
 Vue.use(Router)
 
@@ -18,6 +19,12 @@ export default new Router({
       path: '/housekeeping',
       components: {
         housekeeping: housekeeping
+      }
+    },
+    {
+      path: '/maternity',
+      components: {
+        maternity: maternity
       }
     }
   ]
