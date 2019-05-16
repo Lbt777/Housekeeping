@@ -1,12 +1,12 @@
-@import "./public.less";
 //公共样式
+@import "./public.less";
 *{
-   padding: 0;
-   margin: 0;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
- }
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;/*默认字体*/
   color: #ccc;
@@ -16,6 +16,11 @@ body {
 }
 li{
   list-style: none;
+  float: left;
+}
+a{
+  text-decoration: none;
+  color: #000;
 }
 ul{
   overflow: hidden;
@@ -24,7 +29,6 @@ ul{
   max-width: 1200px;
   margin:0 auto;
 }
-
 //左右浮动 清除浮动
 .fl{
   float: left;
@@ -251,7 +255,3 @@ margin-t-30{
 margin-b-30{
   margin-bottom: @number-30;
 }
-
-
-
-
