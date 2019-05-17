@@ -4,6 +4,7 @@
     <router-view name="housekeeping"></router-view>
     <router-view name="homaterni"></router-view>
     <router-view name="maternity"></router-view>
+    <router-view name="lactation"></router-view>
   </div>
 </template>
 
