@@ -8,6 +8,7 @@
                     <div class=""></div>
                 </div>
                 <span>南京市</span>
+                <span class="clear"></span>
                 <div class="city">
                     <p>选择城市</p>
                     <ul>
