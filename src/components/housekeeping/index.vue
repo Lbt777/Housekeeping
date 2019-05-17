@@ -150,7 +150,7 @@ export default {
   .server-ul02{
     margin-top: 100px;
   }
-  .container .primary ul li i {
+  .container .primary ul li i{
     display: block;
     width: 45px;
     height: 2px;
