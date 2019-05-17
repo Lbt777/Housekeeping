@@ -26,36 +26,74 @@
           <div class="promise-warp">
             <ul>
               <li>
-                <div>
+                <div class="promise-boximg">
                   <img src="./image/fwcn1.png"/>
                   <img src="./image/fwcn2.png"/>
                 </div>
+                <div class="promise-title">
+                  <div class="promise-list">
+                    <span class="fl font-18">阿姨爽约</span>
+                    <h1 class="fr ">替</h1>
+                    <p class="clearfix">阿姨因特殊原因不能在规定时间内进行服务，e家政将征得客户同意后为客户替换其它阿姨进行服务或退款。</p>
+                  </div>
+                </div>
               </li>
               <li>
-                <div>
+                <div class="promise-boximg">
                   <img src="./image/fwcn3.png"/>
                   <img src="./image/fwcn4.png"/>
                 </div>
+                <div class="promise-title">
+                  <div class="promise-list">
+                    <span class="fl font-18">打扫不干净</span>
+                    <h1 class="fr ">免</h1>
+                    <p class="clearfix">阿姨未达到标准，免费进行第二次保洁服务。</p>
+                  </div>
+                </div>
               </li>
               <li>
-                <div>
+                <div class="promise-boximg">
                   <img src="./image/fwcn5.png"/>
                   <img src="./image/fwcn6.png"/>
                 </div>
+                <div class="promise-title">
+                  <div class="promise-list">
+                    <span class="fl font-18">补偿服务时间</span>
+                    <h1 class="fr ">赔</h1>
+                    <p class="clearfix">阿姨服务过程中，造成客户物品损坏或财产损失，e家政将及时联系保险公司做好理赔工作。</p>
+                  </div>
+                </div>
               </li>
               <li>
-                <div>
+                <div class="promise-boximg">
                   <img src="./image/fwcn7.png"/>
                   <img src="./image/fwcn8.png"/>
                 </div>
+                <div class="promise-title">
+                  <div class="promise-list">
+                    <span class="fl font-18">服务不满意</span>
+                    <h1 class="fr ">换</h1>
+                    <p class="clearfix">客户在阿姨保洁过程之中对服务不满意，可提出更换阿姨。</p>
+                  </div>
+                </div>
               </li>
               <li>
-                <div>
+                <div class="promise-boximg">
                   <img src="./image/fwcn9.png"/>
                   <img src="./image/fwcn10.png"/>
                 </div>
+                <div class="promise-title">
+                  <div class="promise-list">
+                    <span class="fl font-18">补偿服务时间</span>
+                    <h1 class="fr ">补</h1>
+                    <p class="clearfix">阿姨故意推延服务时间、磨洋工，导致未在规定服务时间内完成服务，经核实后为客户补偿相应服务时间。</p>
+                  </div>
+                </div>
               </li>
             </ul>
+            <div class="but-img">
+              <img src="./image/fwcn0.jpg"/>
+            </div>
           </div>
         </div><!--中间左边-->
         <div class="promise-r fr">
@@ -86,6 +124,7 @@ export default {
     }
     .promise-l{
       width: 79%;
+      position: relative;
       background: @whiteColor;
       .promise-box{
         margin: 70px 60px 70px 60px;
@@ -110,7 +149,50 @@ export default {
         margin: 0 auto;
       }
       .promise-warp{
-        margin: 136px 57px 70px 50px;
+        margin: 80px 57px 70px 50px;
+        .but-img{
+          bottom: -3px;
+          right: 0;
+          position: absolute;
+        }
+      }
+      .promise-warp ul li{
+        width: 33%;
+        margin-bottom: 80px;
+        .promise-title{
+          background: url("./image/fwcn11.png") no-repeat;
+          border-bottom: 2px solid @orangeColor;
+          height: 173px;
+          .promise-list{
+            padding: 50px 18px 0 18px;
+            p{
+              color: @darkgrey;
+              line-height: 22px;
+            }
+          }
+          .promise-list h1{
+            font-size: 32px;
+            color: @orangeColor;
+          }
+        }
+      }
+      .promise-warp ul li .promise-boximg{
+        margin: 0 0 -20px 20px;
+      }
+      .promise-warp ul li .promise-boximg img:first-child{
+        display: inline-block;
+      }
+      .promise-warp ul li .promise-boximg img:last-child{
+        display: none;
+      }
+      .promise-warp ul li .promise-boximg:hover img:first-child{
+        display: none;
+      }
+      .promise-warp ul li .promise-boximg:hover img:last-child{
+        display: inline-block;
+      }
+      .promise-warp ul li .promise-title{
+        width: 95%;
       }
     }
   }
