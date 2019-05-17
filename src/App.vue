@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-
     <navs/>
     <banner/>
     <router-view></router-view>
     <sidebar/>
     <foot/>
-
   </div>
 </template>
 
 <script>
-// banner×é¼ş
+// bannerç»„ä»¶
 import banner from 'com/publicstyle/banner'
-// nav×é¼ş
+// navç»„ä»¶
 import navs from 'com/publicstyle/nav'
-// ²à±ßÀ¸
+// ä¾§è¾¹æ 
 import sidebar from 'com/publicstyle/sidebar'
-// µ×²¿
+// åº•éƒ¨
 import foot from 'com/publicstyle/footer'
 export default {
   name: 'App',
@@ -29,4 +27,3 @@ export default {
   }
 }
 </script>
-
