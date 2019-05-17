@@ -290,6 +290,7 @@ export default {
         }
         .blusive ul li{
           margin-bottom: 45px;
+          float: none;
         }
         .blusive ul li span{
           font-size: 12px;
