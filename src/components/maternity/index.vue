@@ -153,7 +153,6 @@
         </ul>
       <div class="fenge-line03"></div>
     </div>
-
     <div class="primary-right">
       <div class="img01"><img class="" src="./img/right_img.jpg"></div>
       <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
@@ -171,7 +170,6 @@ export default {
   }
   .primary{
     width: 950px;
-   height: 580px;
     float: left;
     background: @whiteColor;
   }
@@ -407,5 +405,4 @@ export default {
     -webkit-line-clamp: 3;//向显示多少行就给多大值
     -webkit-box-orient: vertical;
   }
-
 </style>
