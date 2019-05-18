@@ -281,7 +281,7 @@ export default {
           margin-right: 20px;
         }
         .blusive-ylist{
-          margin-right: 170px;
+          margin-right: 168px;
           margin-left: 20px;
         }
         .blusive ul li:first-child{
