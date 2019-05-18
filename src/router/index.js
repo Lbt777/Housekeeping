@@ -17,6 +17,8 @@ import parenting from 'com/parenting'
 import cooperation from 'com/cooperation'
 // 关于我们页面
 import about from 'com/about'
+//关于我们tab1
+import contact1 from 'com/publicstyle/contact1'
 // 服务承诺页面
 import promise from 'com/promise'
 // 安全保障页面
@@ -107,6 +109,14 @@ export default new Router({
         default: about,
         about: about
       },
+      children:[
+        {
+          path:'',
+          components:{
+            default:contact1
+          }
+        }
+      ],
       meta: {
         title: 'e家政 - 给您介绍e家政公司服务项目范围'
       }
