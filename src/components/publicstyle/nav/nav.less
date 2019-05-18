@@ -1,6 +1,6 @@
 .nav{
-    overflow: hidden;
-    background: transparent;
+    height: 103px;
+    background: #fff;
 }
 .clear{
   content:'';
@@ -37,6 +37,7 @@
             left: 0;
             overflow: hidden;
             display: none;
+            z-index: 3;
             p{
                 padding-left: 15px;
                 line-height: 45px;
@@ -62,6 +63,9 @@
 }
 .address:hover .city{
     display: block;
+}
+.city .el-col.el-col-6:hover li{
+    color: @darkorangeColor;
 }
 .item{
     float: right;
