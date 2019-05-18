@@ -1,7 +1,5 @@
 <template>
-
   <div class="container clearfix">
-
     <div class="primary">
       <div class="month-nurse-module01 clearfix">
         <ul>
@@ -161,25 +159,11 @@
       <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
     </div>
   </div>
-
 </template>
 <script>
-// banner组件
-import banner from 'com/publicstyle/banner'
-// nav组件
-import navs from 'com/publicstyle/nav'
-// 侧边栏
-import sidebar from 'com/publicstyle/sidebar'
-
 export default {
-  components: {
-    banner,
-    navs,
-    sidebar
-  }
 }
 </script>
-
 <style lang="less" scoped>
   @import "~static/css/common.less";
   .containerself{

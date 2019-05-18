@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-
     <div class="primary">
       <div class="title02">
         <h2>服务内容</h2>
@@ -9,7 +8,7 @@
           <a>乳腺护理</a>
         </p>
       </div>
-      <div class="contens">
+      <div class="contens clearfix">
         <ul class="ul1">
           <li>
             <b>01</b>
@@ -45,7 +44,14 @@ export default {
 </script>
 <style lang="less" scoped>
   @import "~static/css/common.less";
-
+  .ul1 span{
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    clear: both;
+    font-size: 0;
+  }
   .primary{
     width: 950px;
     height: 445px;
