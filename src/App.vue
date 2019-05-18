@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view name="maternity"></router-view>
     <navs/>
     <banner/>
     <router-view></router-view>

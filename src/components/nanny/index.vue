@@ -307,7 +307,7 @@ export default {
       }
       .price-service tr td{
         background-color: @bglightdark;
-        padding: 10px 10px 10px 10px;
+        padding: 10px 6px 10px 9px;
         font-size: 14px;
       }
       .price-service tr:first-child td:first-child{
