@@ -391,6 +391,6 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import "~static/css/common.less";
-@import "~./index.less";
+/*@import "~static/css/common.less";*/
+/*@import "~./index.less";*/
 </style>

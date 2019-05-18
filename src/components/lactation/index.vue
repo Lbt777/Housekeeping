@@ -1,111 +1,128 @@
 <template>
-  <div class="container">
+  <div class="container clearfix">
+    <div class="top-des">
+      <h6>您是否对催乳师感到疑惑？</h6>
+      <p>催乳师，是对专门催乳的人员的一种称呼，
+        催乳师就是通过催乳技术即中医推拿手法，为产妇解决产后无乳、
+        乳少等症状的专业护理人员。</p>
+      <b></b>
+    </div>
     <div class="primary">
-      <div class="title02">
-        <h2>服务内容</h2>
-        <p>
-          <a>母乳哺育</a>
-          <a>乳腺护理</a>
-        </p>
+    <div class="primary-left">
+      <div class="modules01">
+        <div class="title">
+          <h2>服务内容</h2>
+          <p>
+            <a id="test">母乳哺育</a>
+            <a>乳腺护理</a>
+          </p>
+        </div>
+        <div>
+          <el-tabs v-model="activeName" @tab-click="handleClick">
+            <el-tab-pane label="母乳哺育" name="first">
+              <ul class="ul1">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+            </el-tab-pane>
+            <el-tab-pane label="乳腺护理" name="second">
+              <ul class="ul2">
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+              </ul>
+            </el-tab-pane>
+          </el-tabs>
+        </div>
       </div>
-      <div class="contens clearfix">
-        <ul class="ul1">
-          <li>
-            <b>01</b>
-            <span>催乳师通过专业知识和技能帮助产妇建立泌乳反射的过程。</span>
-            <p></p>
-            <i></i>
-            <em></em>
-            <samp></samp>
-          </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul class="ul2">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+
     </div>
     <div class="primary-right">
       <div class="img01"><img class="" src="./img/right_img.jpg"></div>
       <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
     </div>
   </div>
+  </div>
 </template>
 <script>
 export default {
+
 }
 </script>
 <style lang="less" scoped>
-  @import "~static/css/common.less";
-  .ul1 span{
-    display: block;
-    height: 0;
-    line-height: 0;
-    overflow: hidden;
-    clear: both;
-    font-size: 0;
-  }
-  .primary{
-    width: 950px;
-    height: 445px;
-    float: left;
-    background: @whiteColor;
-  }
-  .primary .title02{
-    text-align: center;
-    margin-bottom: 50px;
+  @import '~static/css/common.less';
 
-  }
-  .primary .title02 h2{
-    background: url("./img/cuiru-bg.png") no-repeat center;
-    color: @grayorangeColor;
-    font-size: 24px;
-    height: 34px;
-    margin-bottom: 40px;
-  }
-  .primary .title02 p a{
-    display: inline-block;
-    width: 103px;
-    height: 33px;
-    line-height: 33px;
-    font-size: 16px;
-  }
-   .primary .contens {
-    height: 512px;
-    margin: 0 40px;
-    position: relative;
-  }
-  .primary .contens ul li{
-    background: url("./img/cuiru-bg2.jpg") no-repeat center;
+  .modules01 ul li{
+   background: url("./img/cuiru-bg2.jpg") no-repeat center ;
     width: 240px;
     height: 206px;
     position: relative;
     float: left;
     margin: 0px 25px 50px;
     display:block;
+   }
+  a{
+    cursor:pointer
   }
-  .primary .contens ul li b {
+  .container .top-des{
+    padding: 50px 0px;
+    position: relative;
+    background: @whiteColor;
+  }
+.container .top-des h6{
+    color: #E95513;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+  .container .top-des p{
+    color: #E95513;
+  }
+  .container  .top-des b {
     display: block;
-    font-size: 36px;
-    color: #e95513;
-    margin-bottom: 7px;
-    text-align: center;
-    /* font-family: Kalinga; */
-    font-weight: normal;
+    position: absolute;
+    left: 43px;
+    bottom: -34px;
+    width: 68px;
+    height: 68px;
+    background: url(./img/cuiru-icon.png) no-repeat center;
   }
-  .primary .contens .ul2 {
-    display: none;
+  .primary{
+   margin-top: 50px;
+  }
+  .primary-left{
+    width: 950px;
+    float: left;
+    background: @whiteColor;
+  }
+  .title{
+    text-align: center;
+  }
+  .title h2 {
+    background: url(./img/cuiru-bg.png) no-repeat center;
+    color: #E95513;
+    font-size: 24px;
+    height: 34px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+   .title  p {
+    margin-bottom: 50px;
+  }
+   .title p a{
+    display: inline-block;
+    width: 103px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 16px;
+    color: #666;
   }
   .primary-right{
     width: 240px;
-    height: 806px;
     float: right;
     background: white;
     text-align: center;
