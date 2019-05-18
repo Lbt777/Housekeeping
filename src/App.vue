@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <router-view name="maternity"></router-view>
     <navs/>
     <banner/>
     <router-view></router-view>
@@ -8,10 +7,11 @@
     <foot/>
   </div>
 </template>
+
 <script>
 // banner组件
 import banner from 'com/publicstyle/banner'
-// nav×é¼þ
+// nav组件
 import navs from 'com/publicstyle/nav'
 // 侧边栏
 import sidebar from 'com/publicstyle/sidebar'

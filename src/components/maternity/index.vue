@@ -1,7 +1,5 @@
 <template>
-
   <div class="container clearfix">
-
     <div class="primary">
       <div class="month-nurse-module01 clearfix">
         <ul>
@@ -155,31 +153,16 @@
         </ul>
       <div class="fenge-line03"></div>
     </div>
-
     <div class="primary-right">
       <div class="img01"><img class="" src="./img/right_img.jpg"></div>
       <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
     </div>
   </div>
-
 </template>
 <script>
-// banner组件
-import banner from 'com/publicstyle/banner'
-// nav组件
-import navs from 'com/publicstyle/nav'
-// 侧边栏
-import sidebar from 'com/publicstyle/sidebar'
-
 export default {
-  components: {
-    banner,
-    navs,
-    sidebar
-  }
 }
 </script>
-
 <style lang="less" scoped>
   @import "~static/css/common.less";
   .containerself{
@@ -187,7 +170,6 @@ export default {
   }
   .primary{
     width: 950px;
-   height: 580px;
     float: left;
     background: @whiteColor;
   }
@@ -423,5 +405,4 @@ export default {
     -webkit-line-clamp: 3;//向显示多少行就给多大值
     -webkit-box-orient: vertical;
   }
-
 </style>
