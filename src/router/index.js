@@ -17,6 +17,10 @@ import parenting from 'com/parenting'
 import cooperation from 'com/cooperation'
 // 关于我们页面
 import about from 'com/about'
+// 关于我们tab1
+import contact1 from 'com/publicstyle/contact/contact1'
+// 关于我们tab2
+import contact2 from 'com/publicstyle/contact/contact2'
 // 关于我们tab3
 import contact3 from 'com/publicstyle/contact/contact3'
 // 关于我们tab4

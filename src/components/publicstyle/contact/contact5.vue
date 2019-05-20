@@ -66,8 +66,6 @@
       <span>&nbsp;&nbsp;&nbsp;&nbsp;       nline Booking</span>
     </div>
     <div class="information-list">
-
-
     </div>
   </div>
 </template>
