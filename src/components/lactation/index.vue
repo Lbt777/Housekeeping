@@ -432,7 +432,7 @@ export default {
   }
 }
 </script>
-<style lang="less" scoped>
+<style lang="less" scoped >
   @import '~static/css/common.less';
 
   .modules01 ul li{
@@ -514,17 +514,17 @@ export default {
       margin-top: 90px;
     }
   }
-  .el-tabs__nav-scroll {
+ /deep/ .el-tabs__nav-scroll {
     overflow: hidden;
     margin-left: 400px;
   }
-  .el-tabs__item.is-active {
+  /deep/ .el-tabs__item.is-active {
     color: #E95513;
     &:hover{
       color: #E95513;
     }
   }
-  .el-tabs__active-bar{
+  /deep/.el-tabs__active-bar{
     background-color: #E95513;
   }
   .tab-next .ul1{
