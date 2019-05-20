@@ -433,6 +433,349 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import '~static/css/common.less';
-@import '~./laction.less';
+  @import '~static/css/common.less';
+
+  .modules01 ul li{
+   background: url("./img/cuiru-bg2.jpg") no-repeat center ;
+    width: 240px;
+    height: 206px;
+    position: relative;
+    float: left;
+    margin: 0px 25px 50px;
+    display:block;
+   }
+  a{
+    cursor:pointer
+  }
+  .container .top-des{
+    padding: 50px 0px;
+    position: relative;
+    background: @whiteColor;
+  }
+.container .top-des h6{
+    color: #E95513;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+  .container .top-des p{
+    color: #E95513;
+  }
+  .container  .top-des b {
+    display: block;
+    position: absolute;
+    left: 43px;
+    bottom: -34px;
+    width: 68px;
+    height: 68px;
+    background: url(./img/cuiru-icon.png) no-repeat center;
+  }
+  .primary{
+   margin-top: 50px;
+  }
+  .primary-left{
+    width: 950px;
+    float: left;
+    background: @whiteColor;
+  }
+  .title{
+    text-align: center;
+  }
+  .title h2 {
+    background: url(./img/cuiru-bg.png) no-repeat center;
+    color: #E95513;
+    font-size: 24px;
+    height: 34px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+   .title  p {
+    margin-bottom: 50px;
+  }
+   .title p a{
+    display: inline-block;
+    width: 103px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 16px;
+    color: #666;
+  }
+  .primary-right{
+    position: fixed;
+    width: 240px;
+    top: 1040px;
+    right: 75px;
+    z-index: 999;
+    background: white;
+    text-align: center;
+    .img01{
+      margin-top: 60px;
+    }
+    .img02{
+      margin-top: 90px;
+    }
+  }
+  .el-tabs__nav-scroll {
+    overflow: hidden;
+    margin-left: 400px;
+  }
+  .el-tabs__item.is-active {
+    color: #E95513;
+    &:hover{
+      color: #E95513;
+    }
+  }
+  .el-tabs__active-bar{
+    background-color: #E95513;
+  }
+  .tab-next .ul1{
+    margin-left: 40px;
+  }
+  .tab-next  .ul1 li{
+    padding-top: 20px;
+  }
+  .tab-b{
+    display: block;
+    font-size: 36px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-weight: normal;
+    color:#E95513 ;
+  }
+  .tab-span{
+    display: block;
+    font-size: 16px;
+    color: #E95513;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+.tab-p{
+  margin: 0 15px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.tab-i{
+  position: absolute;
+  background: url(./img/cuiru-bg3.png) no-repeat center;
+  width: 26px;
+  height: 23px;
+  top: 40px;
+  right: 96px;
+}
+.tab-em{
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  top: 63px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.tab-samp{
+  position: absolute;
+  display: block;
+  bottom: 3px;
+  right: 3px;
+  z-index: 100;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent #fff #fff transparent;
+}
+.tab-next  .ul1 li:hover{
+  background:#E95513  ;
+  color: @whiteColor;
+  .tab-b{
+  color: @whiteColor;
+}
+  .tab-span{
+    color: @whiteColor;
+  }
+  .tab-i{
+    display: none;
+  }
+}
+.fenge-line{
+  width: 950px;
+  background: @bglightdark;
+  height: 30px;
+}
+.table-des{
+  width: 866px;
+  margin: auto;
+}
+ table {
+    text-align: center;
+    vertical-align: middle;
+  }
+ #td1{
+   border-top: 2px solid #E95513;
+ }
+  .table-des table thead tr td {
+    padding: 15px 0;
+    border-top: 2px solid #E95513;
+    color: #E95513;
+    font-size: 16px;
+    width: 139px;
+    }
+  #last-td{
+    width: 298px;
+  }
+   .td1 {
+    border-top: 2px solid #E95513;
+    border-bottom: 2px solid #E95513;
+    color: #E95513;
+    font-size: 16px;
+  }
+  .modules02 table tbody tr td {
+    padding: 15px 0;
+    border-top: 1px dashed #808080;
+  }
+  .td_bg {
+    background-color: #FEEFE8;
+  }
+   hr {
+    border: none;
+    border-top: 1px dashed #E95513;
+
+     padding-top: 0px;
+     margin-top: 10px;
+     border-bottom-width: 10px;
+     padding-bottom: 10px;
+   }
+  .modules03{
+    padding-bottom: 40px;
+  }
+  .modules03-des ul {
+    background: url(./img/cuiru2.png) no-repeat center bottom;
+    height: 199px;
+  }
+  .modules03-des {
+    width: 870px;
+    margin: auto;
+  }
+  .modules03-des ul li a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/cuiru-liu.png);
+    margin-bottom: 23px;
+  }
+  .modules03-des ul .li1 a{
+    background-position: 0 0;
+    &:hover{
+      background-position: 0px 100px;
+    }
+  }
+  .modules03-des ul .li1:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul .li2 a{
+    background-position: -100px 0;
+    &:hover{
+      background-position: -100px 100px;
+    }
+  }
+  .modules03-des ul .li2:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul .li3 a{
+    background-position: -200px 0;
+    &:hover{
+      background-position: -200px 100px;
+    }
+  }
+  .modules03-des ul .li3:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul .li4 a{
+    background-position: -300px 0;
+    &:hover{
+      background-position: -300px 100px;
+    }
+  }
+  .modules03-des ul .li4:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul .li5 a{
+    background-position: -400px 0;
+    &:hover{
+      background-position: -400px 100px;
+    }
+  }
+  .modules03-des ul .li5:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul .li6 a{
+    background-position: -500px 0;
+    &:hover{
+      background-position: -500px 100px;
+    }
+  }
+  .modules03-des ul .li6:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul .li1{
+    margin-left: 10px;
+  }
+  .li2, .li3, .li4, .li5, .li6{
+    margin-left: 48px;
+  }
+  .modules03-des ul li p {
+    color: #999;
+    text-align: center;
+  }
+  .modules04-ul{
+    width: 866px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .modules04-ul li{
+     height: 449px;
+    position: relative
+   }
+  .modules04 .modules04-ul .content01{
+    width: 266px;
+    border: 1px solid #E0DFDF;
+    padding: 50px 15px 0;
+    height: 194px;
+    background-color: #F5F5F5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .modules04-ul li p:first-child {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .modules04-ul li .person{
+    background: url("./img/person01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 170px;
+    height: 255px;
+    position: absolute;
+    top: 193px;
+    z-index: 50;
+    left: 50px;
+  }
+  #person02{
+    left: 80px;
+  }
+  .modules04-ul  li .yuyue {
+    color: #E95513;
+    font-size: 16px;
+    display: block;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+    background-color: #EFEFEF;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    &:hover{
+      background: @grayorangeColor;
+      color: white;
+    }
+  }
+  #modules04-li2{
+    margin: 0 30px;
+  }
 </style>
