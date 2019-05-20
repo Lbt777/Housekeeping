@@ -3,9 +3,36 @@
     <div class="primary">
       <div class="month-nurse-module01 clearfix">
         <ul>
-          <li class="li1"></li>
-          <li class="li2"></li>
-          <li class="li3"></li>
+          <li class="li1">
+            <div class="li1-hover">
+              <br>
+              面试严格
+              <br>
+              系统培训
+              <br>
+              标准化服务
+            </div>
+          </li>
+          <li class="li2">
+            <div class="li1-hover">
+              <br>
+              月嫂保险
+              <br>
+              人身体检
+              <br>
+              规范性工作
+            </div>
+          </li>
+          <li class="li3">
+            <div class="li1-hover">
+              <br>
+              持证上岗
+              <br>
+              权威认证
+              <br>
+              专业化保障
+            </div>
+          </li>
         </ul>
         <div class="nurse-btn">月嫂在线带人</div>
         <P>月嫂是母婴护理师的俗称，主要是专业护理产妇与新生儿，服务的内容以月子护理为主，新生儿的护理占80%，产妇的护理占20%。月嫂属于高级家政人员，不同于一般的家政护理员。</P>
@@ -201,8 +228,30 @@ export default {
       padding: 20px;
     }
 
-  .month-nurse-module01 .li1{
+  #li1{
+    width: 158px;
+    height: 158px;
+    background: red;
+    display: none;
+  }
+  .li1-hover{
+    display: none;
+  }
+  .month-nurse-module01 .li1 ,.li2,.li3{
     background: url("./img/mon-nurse1.jpg");
+    &:hover{
+      .li1-hover{
+        width: 158px;
+        height: 158px;
+        background: @grayorangeColor;
+        display: block;
+        border-radius: 50%;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
   }
   .month-nurse-module01 .li2{
     background: url("./img/mon-nurse2.jpg");
