@@ -17,10 +17,6 @@ import parenting from 'com/parenting'
 import cooperation from 'com/cooperation'
 // 关于我们页面
 import about from 'com/about'
-// 关于我们tab1
-import contact1 from 'com/publicstyle/contact/contact1'
-// 关于我们tab2
-import contact2 from 'com/publicstyle/contact/contact2'
 // 关于我们tab3
 import contact3 from 'com/publicstyle/contact/contact3'
 // 关于我们tab4
@@ -35,10 +31,12 @@ import security from 'com/security'
 import personal from 'com/personal'
 // 在线预约页面
 import subscribe from 'com/subscribe'
-// 在线预约子路由页面
+// 在线预约子路由页面1
 import subscribetab1 from 'com/publicstyle/subscribetab/tab1'
 // 在线预约子路由页面2
-import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
+// import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
+// 家政子路由页面1
+import housesub from'com/housesub'
 
 Vue.use(Router)
 
@@ -60,6 +58,16 @@ export default new Router({
       components: {
         default: housekeeping,
         housekeeping: housekeeping
+      },
+      meta: {
+        title: 'e家政 - 全方面的家政服务项目,新用户首单享优惠'
+      }
+    },
+    {
+      path: '/housesub',
+      components: {
+        default: housesub,
+        housekeeping: housesub
       },
       meta: {
         title: 'e家政 - 全方面的家政服务项目,新用户首单享优惠'
@@ -225,30 +233,17 @@ export default new Router({
       },
       children: [
         {
-          path: '/subscribetab1',
-          components: {
-            default: subscribetab1
-          }
-        },
-        {
           path: '',
           components: {
             default: subscribetab1
           }
-        },
-        {
-          path: '/subscribetab2',
-          components: {
-            default: subscribetab2,
-            subscribetab2: subscribetab2
-          }
-        },
-        {
-          path: '',
-          components: {
-            default: subscribetab2,
-            subscribetab2: subscribetab2
-          }
+        // },
+        // {
+        //   path: '',
+        //   components: {
+        //     default: subscribetab2,
+        //     subscribetab2: subscribetab2
+        //   }
         }
       ],
       meta: {
