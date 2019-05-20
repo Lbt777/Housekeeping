@@ -29,6 +29,8 @@ import subscribe from 'com/subscribe'
 import subscribetab1 from 'com/publicstyle/subscribetab/tab1'
 // 在线预约子路由页面2
 // import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
+// 家政子路由页面1
+import housesub from'com/housesub'
 
 Vue.use(Router)
 
@@ -50,6 +52,16 @@ export default new Router({
       components: {
         default: housekeeping,
         housekeeping: housekeeping
+      },
+      meta: {
+        title: 'e家政 - 全方面的家政服务项目,新用户首单享优惠'
+      }
+    },
+    {
+      path: '/housesub',
+      components: {
+        default: housesub,
+        housekeeping: housesub
       },
       meta: {
         title: 'e家政 - 全方面的家政服务项目,新用户首单享优惠'
