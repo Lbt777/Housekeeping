@@ -1,46 +1,54 @@
 <template>
   <div>
+    <div class="service-title">
+      <h2>服务团队</h2>
+      <p>Service Team</p>
+      <img src="./image/fwcn.jpg"/>
+    </div>
+    <ul class="service-warp">
+      <li class="service-li1">
+        <div class="service-fl fl">
+          <img src="./image/fwcn1.jpg"/>
+        </div>
+        <div class="service-fr fr">
+          <span>家政团队</span>
+          <span> Housekeeping team</span>
+          <p>e家政家政团队由保洁师和家居工程技师组成，现拥有3000+人员。业务范围已覆盖全国60+座城市。“不求海量的用户，只求服务好每一位客户”是e家政秉承的服务宗旨。</p>
+        </div>
+      </li>
+      <li class="service-li1">
+        <div class="service-fr f1">
+          <span>母婴团队</span>
+          <span> Maternal and infant services item</span>
+          <p>e家政母婴团队包由月嫂、育儿嫂、催乳师、产后康复师、小儿推拿师组成。现有员工制月嫂300余人，月服务单量超过6000单。所有服务人员定期参加e家政职业技术学校的培训，不断提高自己的专业水平和服务意识，以保证e家政的服务质量成为行业标杆。</p>
+        </div>
+        <div class="service-fl fr">
+          <img src="./image/fwcn2.jpg"/>
+        </div>
 
-    <div class="about-profile clearfix"><!--中间左边-->
-      <h1>发展历程</h1>
-      <span>History</span>
-      <div class="hr"></div>
-      <div class="profile-l profile-l1 fl">
-        <span>2015年</span>
-        <p>2015.03 e家政品牌成立</p>
-        <p>2015.12 e家政首次众筹</p>
-        <br/>
-        <span>2016年</span>
-        <p>2016.04 亿家政职业培训学校成立</p>
-        <p>2016.10 南京月嫂服务中心正式成立</p>
-        <br/>
-        <span>2017年</span>
-        <p>2017.08 苏州、青岛分公司正式落地</p>
-        <p>2017.10 上海分公司正式落地</p>
-        <p>2017.12 无锡、杭州、合肥分公司正式落地</p>
-        <br/>
-        <span>2018年</span>
-        <p>2018.02 哈尔滨分公司正式落地</p>
-        <p>2018.03 深圳、武汉分公司正式落地</p>
-        <p>2018.04 广州、成都、常州分公司正式落地</p>
-        <p>2018.05 北京分公司正式落地</p>
-        <p>2018.06 郑州分公司正式落地</p>
-        <p>2018.07 徐州、长春、溧水分公司正式落地</p>
-        <p>2018.08 济南、芜湖、洛阳、宁波分公司正式落地</p>
-        <p>2018.09 阜阳、镇江分公司正式落地</p>
-        <p>2018.09 阜阳、镇江分公司正式落地</p>
-        <p>2018.12 盐城、亳州分公司正式落地</p>
-        <p>2019.01 江阴分公司正式落地</p>
-        <br/>
-        <span>2019年</span>
-        <p>2019.01 江阴分公司正式落地</p>
-        <p>2019 预计开通100家分公司</p>
-        <br/>
-      </div>
-      <div class="profile-r profile-r1 fr">
-        <img src="./image/qyjs5.jpg"/>
-      </div>
-    </div><!--中间左边-->
+      </li>
+      <li class="service-li1">
+        <div class="service-fl fl">
+          <img src="./image/fwcn3.jpg"/>
+        </div>
+        <div class="service-fr fr">
+          <span>甲醛治理团队</span>
+          <span>  Formaldehyde management team</span>
+          <p>自主研发超微纳米光触媒、天然萃取生物触媒、纳米银除菌剂，并获得CMA机构、江苏省疾控中心检验通过。采用国内先进的检测、治理仪器，签约服务，已为企事业单位、学校、大型购物中心、居民住宅等10万余用户提供健康环境。</p>
+        </div>
+      </li>
+      <li class="service-li1">
+        <div class="service-fr f1">
+          <span>运营团队</span>
+          <span> Operation team</span>
+          <p>e家政运营团队分为拓展事业部、行政人事部、网络运营部、技术开发部、产品研发部、客服部，近百人。团队均具有过硬的专业技术、积极向上的心态和为客户奉献的精神。突破进取，扎实工作是团队的工作原则。</p>
+        </div>
+        <div class="service-fl fr">
+          <img src="./image/fwcn4.jpg"/>
+        </div>
+
+      </li>
+    </ul>
   </div>
 </template>
 <script>
@@ -48,43 +56,44 @@ export default {}
 </script>
 <style lang="less" scoped>
   @import "~static/css/common.less";
-  .about-profile{
-    margin-bottom: 20px;
-    h1{
-      display: inline-block;
-      color: @orangeColor;
-    }
-    span{
-      font-size: 18px;
+  .service-title{
+    margin-top: 50px;
+    text-align: center;
+    color: @orangeColor;
+    margin-bottom: 70px;
+    p{
+      margin-top: 15px;
+      margin-bottom: 15px;
       color: @lightgrey;
     }
-    .hr{
-      border-bottom: 1px solid @lightgrey;
-      margin-bottom: 10px;
-    }
-    .profile-l{
-      width: 55%;
-      p{
-        line-height: 24px;
-        text-indent: 32px;
-        color: @borderdark;
-      }
-    }
-    .profile-r{
+  }
+  .service-warp li{
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .service-warp .service-li1{
+    .service-fl{
       width: 35%;
     }
-    .profile-r1 img{
-      width: 100%;
-    }
-    .profile-r3 img{
-      width: 100%;
-    }
-    .profile-l1 p{
-      font-size: 16px;
-      margin-top: 20px;
-    }
-    .profile-l1 span{
-      color: @darkgreyColor;;
+    .service-fr{
+      width: 58%;
+      margin-top: 45px;
+      display: inline-block;
+      span:first-child{
+        font-size: 18px;
+        color: @darkgreyColor;
+        font-weight: normal;
+        border-bottom: 1px solid #FF7125;
+        padding-bottom: 5px;
+        margin-right: 15px;
+      }
+      span:last-child{
+        color: @lightgrey;
+      }
+      p{
+        margin-top: 25px;
+        line-height: 30px;
+      }
     }
   }
 </style>

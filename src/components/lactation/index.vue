@@ -432,7 +432,7 @@ export default {
   }
 }
 </script>
-<style lang="less" >
+<style lang="less" scoped>
   @import '~static/css/common.less';
 
   .modules01 ul li{
