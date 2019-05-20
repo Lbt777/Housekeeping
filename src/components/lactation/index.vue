@@ -409,10 +409,26 @@ export default {
       activeName: 'first'
     }
   },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
   methods: {
-    handleClick(tab, event) {
-      console.log(tab, event);
+    handleClick (tab, event) {
+      console.log(tab, event)
+    },
+    handleScroll () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      var offsetTop = document.querySelector('.primary-right').offsetTop
+      if (scrollTop <= 1040) {
+        offsetTop = 1040 - Number(scrollTop)
+        document.querySelector('.primary-right').style.top = offsetTop + 'px'
+      } else {
+        document.querySelector('.primary-right').style.top = '0px'
+      }
     }
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
@@ -484,8 +500,11 @@ export default {
     color: #666;
   }
   .primary-right{
+    position: fixed;
     width: 240px;
-    float: right;
+    top: 1040px;
+    right: 75px;
+    z-index: 999;
     background: white;
     text-align: center;
     .img01{

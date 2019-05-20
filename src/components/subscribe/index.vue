@@ -4,36 +4,54 @@
         <div class="container title">
             <ul>
                 <li>
-                    <router-link to="" class="active">临时工</router-link>
+                    <router-link to="/subscribetab1">
+                        <el-button type="danger" plain>临时工</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">
+                    <router-link to="/subscribetab2">
                         <el-button type="danger" plain>月嫂</el-button>
                     </router-link>
                 </li>
                 <li>
-                    <router-link to="">育婴育儿</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>育婴育儿</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">入户早教</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>入户早教</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">护理老人</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>护理老人</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">护理病人</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>护理病人</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">VIP服务</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>VIP服务</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">固定钟点工</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>固定钟点工</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">全日制家政</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>全日制家政</el-button>
+                    </router-link>
                 </li>
                 <li>
-                    <router-link to="">住家型家政</router-link>
+                    <router-link to="">
+                        <el-button type="danger" plain>住家型家政</el-button>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -63,15 +81,20 @@ export default {
             li{
                 margin-left: 16px;
                 a{
+                    overflow:hidden;
                     font-size: 16px;
                     display: inline-block;
                     color: @darkorangeColor;
                     border: 1px solid @darkorangeColor;
-                    padding: 3px 13px;
                     -webkit-border-radius: 20px;
                     -moz-border-radius: 20px;
                     border-radius: 20px;
-                    height: 30px;
+                    height: 31px;
+                    button{
+                        width: 83px;
+                        height:100%;
+                        border: none;
+                    }
                 }
             }
         }

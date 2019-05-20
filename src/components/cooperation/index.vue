@@ -1,7 +1,7 @@
 <template>
     <div class="c container">
-      <div class="consultation"><!--咨询加盟-->
-      </div><!--咨询加盟-->
+      <!--<div class="consultation">&lt;!&ndash;咨询加盟&ndash;&gt;-->
+      <!--</div>&lt;!&ndash;咨询加盟&ndash;&gt;-->
       <div class="opportunity"><!--市场机遇-->
         <p>前所未有的市场机遇</p>
         <p class="font-30">80%的城市家庭需要家政，全国市场已超万亿</p>
@@ -68,8 +68,8 @@
         <p>e家政如何全程帮扶创业？</p>
         <p class="font-30">10大支持全新定义家政服务，全国连锁提供稳定单源</p>
       </div><!--创业-->
-      <div class="assist"><!--帮扶流程-->
-        <ul class="assist-list">
+      <div class="assist clearfix"><!--帮扶流程-->
+        <ul class="assist-list clearfix">
           <li>
             <p>01</p>
             <p>品牌推广支持</p>
@@ -91,7 +91,7 @@
             <p>产品研发支持</p>
           </li>
         </ul>
-        <ul class="list-assist">
+        <ul class="list-assist clearfix">
           <li>
             <p>06</p>
             <p>大数据支持</p>
@@ -378,7 +378,7 @@
           </li>
         </ul>
       </div><!--加盟家政-->
-      <div class="partner"><!--合伙人-->
+      <div class="partner clearfix"><!--合伙人-->
         <p>现在申请e家政城市合伙人</p>
         <div class="partner-title">
           <p>如果您对家政行业未来发展有信心，</p>
@@ -535,6 +535,7 @@ export default {
   .assist .list-assist li{
     width: 20%;
     height: 250px;
+    margin-top: -141px;
     background: url("./image/hzhb4.png") no-repeat;
     background-size: 100%;
     p:first-child{
@@ -552,7 +553,6 @@ export default {
     margin-left: 110px;
   }
   .assist .list-assist{
-    margin-top: -141px;
     margin-right: 110px;
   }
   .service{
@@ -636,6 +636,9 @@ export default {
       background: url("./image/hzhb6.png") no-repeat;
       height: 65px;
     }
+    .household-list{
+      height: 226px;
+    }
     .household-list li{
       width: 23%;
       margin-right: 32px;
@@ -664,6 +667,7 @@ export default {
     }
     .list-title{
       margin-left: 110px;
+      height: 261px;
       li{
         width: 28%;
         table tr td{
@@ -673,7 +677,6 @@ export default {
     }
   }
   .partner{
-    margin-top: 80px;
     background: url("./image/hzhb7.jpg") no-repeat;
     background-size: 117%;
     height: 470px;

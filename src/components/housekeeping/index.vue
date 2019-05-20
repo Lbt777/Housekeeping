@@ -13,29 +13,8 @@
             <a href="#"><h6>日常保洁</h6></a>
             <a href="#"><p>钟点工/小时工/清洁护理</p></a>
             <a href="#">
-             <div class="btn-prev01"></div>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="primary-dev primary-dev02">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <div class="btn-prev01"></div>
-            </a>
-          </div>
-        </li>
-      </ul>
-      <ul class="serve server-ul01 clearfix">
-        <li>
-          <div class="primary-dev primary-dev03">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <div class="btn-prev01"></div>
+              <img class="btn-prev01" src="./img/index-icon-1.png">
+              <img class="btn-prev02" src="./img/index-icon-3-1.png">
             </a>
           </div>
         </li>
@@ -45,63 +24,81 @@
             <a href="#"><h6>日常保洁</h6></a>
             <a href="#"><p>钟点工/小时工/清洁护理</p></a>
             <a href="#">
-              <div class="btn-prev01"></div>
-              <div class="btn-prev02"></div>
+              <img class="btn-prev01" src="./img/index-icon-1.png">
+              <img class="btn-prev02" src="./img/index-icon-3-1.png">
             </a>
           </div>
         </li>
       </ul>
       <ul class="serve server-ul01 clearfix">
         <li>
-          <div class="primary-dev primary-dev04">
+          <div class="primary-dev">
             <i></i>
             <a href="#"><h6>日常保洁</h6></a>
             <a href="#"><p>钟点工/小时工/清洁护理</p></a>
             <a href="#">
-              <div class="btn-prev01"></div>
-              <div class="btn-prev02"></div>
+              <img class="btn-prev01" src="./img/index-icon-1.png">
+              <img class="btn-prev02" src="./img/index-icon-3-1.png">
             </a>
           </div>
         </li>
         <li>
-          <div class="primary-dev primary-dev05">
+          <div class="primary-dev">
             <i></i>
             <a href="#"><h6>日常保洁</h6></a>
             <a href="#"><p>钟点工/小时工/清洁护理</p></a>
             <a href="#">
-              <div class="btn-prev01"></div>
-              <div class="btn-prev02"></div>
+              <img class="btn-prev01" src="./img/index-icon-1.png">
+              <img class="btn-prev02" src="./img/index-icon-3-1.png">
+            </a>
+          </div>
+        </li>
+      </ul>
+      <ul class="serve server-ul01 clearfix">
+        <li>
+          <div class="primary-dev">
+            <i></i>
+            <a href="#"><h6>日常保洁</h6></a>
+            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+            <a href="#">
+              <img class="btn-prev01" src="./img/index-icon-1.png">
+              <img class="btn-prev02" src="./img/index-icon-3-1.png">
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="primary-dev">
+            <i></i>
+            <a href="#"><h6>日常保洁</h6></a>
+            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+            <a href="#">
+              <img class="btn-prev01" src="./img/index-icon-1.png">
+              <img class="btn-prev02" src="./img/index-icon-3-1.png">
             </a>
           </div>
         </li>
       </ul>
     </div>
-    <div class="primary-right">
-     <div class="img01"><img class="" src="./img/right_img.jpg"></div>
-      <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
-    </div>
-
+    <copyright/>
   </div>
 </template>
 <script>
+// 侧边
+import copyright from 'com/publicstyle/copyright'
 export default {
-  // 改变单个页面颜色
-  // beforeCreate () {
-  //   document.querySelector('body').setAttribute('style', 'background:#F0F0F0')
-  // },
-  // beforeDestroy () {
-  //   document.querySelector('body').setAttribute('style', '')
-  // }
-
+  components: {
+    copyright
+  }
 }
 </script>
 <style lang="less" scoped>
  @import "~static/css/common.less";
   .container{
+    //  position: relative;
+    // top: 620px;
     max-width: 1200px;
     margin: 0 auto;
     .mid-nav{
-      margin-top: 30px;
       height: 40px;
        background:@whiteColor;
     }
@@ -163,104 +160,17 @@ export default {
   width: 300px;
     height: 150px;
     margin-left: 130px;
-    &:hover{
-      background: @bglightdark;
-    }
   }
-  .primary-dev01{
-    background: url("./img/home-working-bg1.png") no-repeat;
-    background-position:  80px 0px;
-  }
- .primary-dev01{
-   background: url("./img/home-working-bg1.png") no-repeat;
-   background-position:  80px 0px;
- }
- .primary-dev01{
-   background: url("./img/home-working-bg1.png") no-repeat;
-   background-position:  80px 0px;
- }
-
+  .primary-dev01{}
   .container .primary ul li p{
     color: @grayColor;
     font-size: 16px;
     margin-bottom: 20px;
   }
-.btn-prev01 {
-  width: 42px;
-  height: 42px;
-  background: url("./img/index-icon-1.png") no-repeat;
-  position: absolute;
-  display: block;
-  &:hover{
-    background: url("./img/index-icon-3-1.png") no-repeat;
-  }
+.btn-prev01{
+  display: inline-block;
 }
- .primary-dev:hover{
-   opacity: 1;
-   -webkit-animation-name: hvr-buzz-out;
-   -moz-animation-name: hvr-buzz-out;
-   -ms-animation-name: hvr-buzz-out;
-   animation-name: hvr-buzz-out;
-   -webkit-animation-duration: 0.75s;
-   -moz--animation-duration: 0.75s;
-   -ms--animation-duration: 0.75s;
-   animation-duration: 0.75s;
-   -webkit-animation-timing-function: linear;
-   -moz-animation-timing-function: linear;
-   -ms-animation-timing-function: linear;
-   animation-timing-function: linear;
-   -webkit-animation-iteration-count: 1;
-   -moz-animation-iteration-count: 1;
-   -ms-animation-iteration-count: 1;
-   animation-iteration-count: 1;
- }
- @keyframes hvr-buzz-out{
-   10%{transform: translateX(3px) rotate(2deg)};
- 20%{transform: translateX(-3px) rotate(-2deg)};
- 30%{transform: translateX(3px) rotate(2deg)};
- 40%{transform: translateX(-3px) rotate(-2deg)};
- 50%{transform: translateX(2px) rotate(1deg)};
- 60%{transform: translateX(-2px) rotate(-1deg)};
- 70%{transform: translateX(2px) rotate(1deg)};
- 80%{transform: translateX(-2px) rotate(-1deg)};
- 90%{transform: translateX(1px) rotate(0)};
- 100%{transform: translateX(-1px) rotate(0)};
- }
- @-webkit-keyframes hvr-buzz-out{
-   10%{-webkit-transform: translateX(3px) rotate(2deg)};
- 20%{-webkit-transform: translateX(-3px) rotate(-2deg)};
- 30%{-webkit-transform: translateX(3px) rotate(2deg)};
- 40%{-webkit-transform: translateX(-3px) rotate(-2deg)};
- 50%{-webkit-transform: translateX(2px) rotate(1deg)};
- 60%{-webkit-transform: translateX(-2px) rotate(-1deg)};
- 70%{-webkit-transform: translateX(2px) rotate(1deg)};
- 80%{-webkit-transform: translateX(-2px) rotate(-1deg)};
- 90%{-webkit-transform: translateX(1px) rotate(0)};
- 100%{-webkit-transform: translateX(-1px) rotate(0)};
- }
- @-moz-keyframes hvr-buzz-out{
-   10%{-moz-transform: translateX(3px) rotate(2deg)};
- 20%{-moz-transform: translateX(-3px) rotate(-2deg)};
- 30%{-moz-transform: translateX(3px) rotate(2deg)};
- 40%{-moz-transform: translateX(-3px) rotate(-2deg)};
- 50%{-moz-transform: translateX(2px) rotate(1deg)};
- 60%{-moz-transform: translateX(-2px) rotate(-1deg)};
- 70%{-moz-transform: translateX(2px) rotate(1deg)};
- 80%{-moz-transform: translateX(-2px) rotate(-1deg)};
- 90%{-moz-transform: translateX(1px) rotate(0)};
- 100%{-moz-transform: translateX(-1px) rotate(0)};
- }
- @-ms-keyframes hvr-buzz-out{
-   10%{-ms-transform: translateX(3px) rotate(2deg)};
- 20%{-ms-transform: translateX(-3px) rotate(-2deg)};
- 30%{-ms-transform: translateX(3px) rotate(2deg)};
- 40%{-ms-transform: translateX(-3px) rotate(-2deg)};
- 50%{-ms-transform: translateX(2px) rotate(1deg)};
- 60%{-ms-transform: translateX(-2px) rotate(-1deg)};
- 70%{-ms-transform: translateX(2px) rotate(1deg)};
- 80%{-ms-transform: translateX(-2px) rotate(-1deg)};
- 90%{-ms-transform: translateX(1px) rotate(0)};
- 100%{-ms-transform: translateX(-1px) rotate(0)};
- }
-
+.btn-prev02{
+  display: none;
+}
 </style>

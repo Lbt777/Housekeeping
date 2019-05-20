@@ -236,12 +236,17 @@
       </div><!--签约流程-->
     </div> <!--左边内容-->
     <div class="r-wrap fr"><!--右边内容-->
-      jajaj
+      <copyright/>
     </div> <!--右边内容-->
   </div><!--中间内容-->
 </template>
 <script>
+// 侧边
+import copyright from 'com/publicstyle/copyright'
 export default {
+  components: {
+    copyright
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -250,6 +255,7 @@ export default {
     padding-top: 30px;
     .l-wrap{
       width: 79%;
+      margin-top: 25px;
       .lusive-box{
         padding: 40px 0 60px;
         margin-bottom: 30px;
