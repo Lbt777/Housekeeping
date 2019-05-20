@@ -28,19 +28,19 @@ export default {
 </script>
 <style lang="less" scoped>
 .primary-right{
-    position: fixed;
-    top: 887px;
-    right: 160px;
-    z-index: 9999;
-    width: 240px;
-    height: 670px;
-    background: white;
-    text-align: center;
-    .img01{
-        margin-top: 60px;
-    }
-    .img02{
-        margin-top: 90px;
-    }
+  position: fixed;
+  top: 887px;
+  right: 75px;
+  z-index: 9999;
+  width: 240px;
+  height: 670px;
+  background: white;
+  text-align: center;
+  .img01{
+      margin-top: 60px;
+  }
+  .img02{
+      margin-top: 90px;
+  }
 }
 </style>

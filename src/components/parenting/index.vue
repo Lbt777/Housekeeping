@@ -78,7 +78,7 @@
             <div class="fenge-line"></div>
             <div class="yu-value-bg"><h2>服务价格</h2></div>
             <div class="price"><img src="./img/price.jpg"></div>
-            <<table class="main-content" >
+            <table class="main-content" >
             <tbody>
             <tr>
 
@@ -147,7 +147,6 @@
         </table>
             <div class="fenge-line"></div>
             <div class="yu-value-bg"><h2>品质保障</h2></div>
-
             <div class="product_list">
                 <ul>
                     <li>
@@ -195,11 +194,28 @@
             <div class="img01"><img class="" src="./img/right_img.jpg"></div>
             <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
         </div>
-
     </div>
 </template>
 <script>
 export default {
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      var offsetTop = document.querySelector('.primary-right').offsetTop
+      if (scrollTop <= 887) {
+        offsetTop = 887 - Number(scrollTop)
+        document.querySelector('.primary-right').style.top = offsetTop + 'px'
+      } else {
+        document.querySelector('.primary-right').style.top = '0px'
+      }
+    }
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -208,6 +224,7 @@ export default {
         width: 950px;
         float: left;
         background: @whiteColor;
+        margin-top: 55px;
     }
     .yu-value-h3{
         font-size: 14px;
@@ -215,9 +232,11 @@ export default {
         padding: 0px 50px;
     }
     .primary-right{
-        margin-top: 60px;
+        position: fixed;
+        top: 887px;
+        right: 75px;
+        z-index: 9999;
         width: 240px;
-        float: right;
         background: white;
         text-align: center;
         .img01{
