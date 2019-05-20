@@ -30,7 +30,7 @@ import personal from 'com/personal'
 // 在线预约页面
 import subscribe from 'com/subscribe'
 // 在线预约子路由页面2
-// import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
+import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
 
 Vue.use(Router)
 
@@ -178,6 +178,34 @@ export default new Router({
         default: subscribe,
         subscribe: subscribe
       },
+      children: [
+        {
+          path: '/subscribetab1',
+          components: {
+            default: subscribetab1
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: subscribetab1
+          }
+        },
+        {
+          path: '/subscribetab2',
+          components: {
+            default: subscribetab2,
+            subscribetab2: subscribetab2
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: subscribetab2,
+            subscribetab2: subscribetab2
+          }
+        }
+      ],
       meta: {
         title: 'e家政 - 在线预约'
       }
