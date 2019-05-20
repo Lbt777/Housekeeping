@@ -17,6 +17,12 @@ import parenting from 'com/parenting'
 import cooperation from 'com/cooperation'
 // 关于我们页面
 import about from 'com/about'
+// 关于我们tab3
+import contact3 from 'com/publicstyle/contact/contact3'
+// 关于我们tab4
+import contact4 from 'com/publicstyle/contact/contact4'
+// 关于我们tab5
+import contact5 from 'com/publicstyle/contact/contact5'
 // 服务承诺页面
 import promise from 'com/promise'
 // 安全保障页面
@@ -123,6 +129,68 @@ export default new Router({
         default: about,
         about: about
       },
+      children: [
+        {
+          path: '/contact1',
+          components: {
+            default: contact1
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: contact1
+          }
+        },
+        {
+          path: '/contact2',
+          components: {
+            default: contact2
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: contact2
+          }
+        },
+        {
+          path: '/contact3',
+          components: {
+            default: contact3
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: contact3
+          }
+        },
+        {
+          path: '/contact4',
+          components: {
+            default: contact4
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: contact4
+          }
+        },
+        {
+          path: '/contact5',
+          components: {
+            default: contact5
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: contact5
+          }
+        }
+      ],
       meta: {
         title: 'e家政 - 给您介绍e家政公司服务项目范围'
       }
