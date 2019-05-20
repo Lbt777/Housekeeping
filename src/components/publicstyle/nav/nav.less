@@ -81,9 +81,15 @@
                 display: inline-block;
                 border-top: 3px solid transparent;
                 &:hover{
-                    border-top: 3px solid red;
+                    border-top: 3px solid @darkorangeColor;
                 }
             }
         }
     }
+}
+ul li:last-child a{
+    color: @darkorangeColor;
+}
+ul li:last-child:hover a{
+    border-top: 3px solid transparent;
 }

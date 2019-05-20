@@ -33,6 +33,12 @@ import subscribe from 'com/subscribe'
 import subscribetab1 from 'com/publicstyle/subscribetab/tab1'
 // 在线预约子路由页面2
 import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
+// 登录页
+import logon from 'com/logon'
+// 登录组件(默认)
+import login from 'com/publicstyle/login/login'
+// 注册组件
+import register from 'com/publicstyle/login/register'
 
 Vue.use(Router)
 
@@ -211,6 +217,32 @@ export default new Router({
       ],
       meta: {
         title: 'e家政 - 在线预约'
+      }
+    },
+    {
+      path: '/logon',
+      components: {
+        default: logon
+      },
+      children: [
+        {
+          path: '',
+          components: {
+            default: login
+          }
+        },
+        {
+          path: '/register',
+          components: {
+            default: register
+          },
+          meta: {
+            title: 'e家政 - 注册'
+          }
+        }
+      ],
+      meta: {
+        title: 'e家政 - 登录'
       }
     }]
 })

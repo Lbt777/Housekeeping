@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import SlideVerify from 'vue-monoplasty-slide-verify'
+Vue.use(SlideVerify)
 Vue.use(Element)
 // 修改标题
 router.beforeEach((to, from, next) => {

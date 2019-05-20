@@ -56,7 +56,7 @@
                     <router-link to="/personal">个人中心</router-link>
                 </li>
                 <li>
-                    <router-link to="/subscribe">在线预约</router-link>
+                    <router-link to="/logon">请登录</router-link>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,38 @@
+.login{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 999999;
+    height: 430px;
+    width: 360px;
+    background-color: rgba(255,255,255,.9);
+    color: #555;
+    text-align: center;
+    padding: 25px 25px 23px;
+    /deep/.el-button.el-button--primary{
+        height: 40px;
+        width: 310px;
+        margin-top: 20px;
+        background: @darkorangeColor;
+        border: none;
+    }
+    a{
+        float: right;
+    }
+    a:hover{
+        color: @darkorangeColor;
+    }
+    .group-input{
+        position: relative;
+        span{
+            float: left;
+            margin-top: 10px;
+        }
+        .btns{
+            height: 20px;
+            position: absolute;
+            top: 29px;
+            right: 8px;
+        }
+    }
+}

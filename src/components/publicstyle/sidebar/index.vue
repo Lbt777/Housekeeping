@@ -1,12 +1,17 @@
 <template>
     <ul class="sidebar">
-        <li class="one">
+        <li class="san" title="点击立即预约">
+          <router-link to="/subscribe">
+            <div class="img-box sans"></div>
+          </router-link>
+        </li>
+        <li class="one" title="爱君公众号">
             <div class="img-box frist"></div>
             <div class="cover ">
                 <img src="./img/right-icon5.jpg">
             </div>
         </li>
-        <li class="two">
+        <li class="two"  title="扫一扫加我微信">
             <div class="img-box sed"></div>
             <div class="cover">
                 <img src="./img/right-icon6.jpg">
