@@ -65,10 +65,7 @@
       <p> 在线预约</p>
       <span>&nbsp;&nbsp;&nbsp;&nbsp;       nline Booking</span>
     </div>
-    <div class="information-list">
-
-
-    </div>
+    <div class="information-list"></div>
   </div>
 </template>
 <script>
