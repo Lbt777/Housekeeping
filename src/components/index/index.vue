@@ -256,14 +256,14 @@
                 </ul>
             </div>
         </div>
-        <div class="btn">
+        <!-- <div class="btn">
             <div class="btn-left bl">
                 <div class="left-box le"></div>
             </div>
             <div class="btn-right bl">
                 <div class="left-box ri"></div>
             </div>
-        </div>
+        </div> -->
         <div class="title">
             <h1><router-link to="/housekeeping">特色服务</router-link></h1>
             <p class="font-18">专业 优质 贴心 温馨</p>

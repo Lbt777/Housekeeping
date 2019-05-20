@@ -28,7 +28,7 @@ import subscribe from 'com/subscribe'
 // 在线预约子路由页面1
 import subscribetab1 from 'com/publicstyle/subscribetab/tab1'
 // 在线预约子路由页面2
-// import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
+import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
 
 Vue.use(Router)
 
@@ -153,17 +153,30 @@ export default new Router({
       },
       children: [
         {
+          path: '/subscribetab1',
+          components: {
+            default: subscribetab1
+          }
+        },
+        {
           path: '',
           components: {
             default: subscribetab1
           }
-        // },
-        // {
-        //   path: '',
-        //   components: {
-        //     default: subscribetab2,
-        //     subscribetab2: subscribetab2
-        //   }
+        },
+        {
+          path: '/subscribetab2',
+          components: {
+            default: subscribetab2,
+            subscribetab2: subscribetab2
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: subscribetab2,
+            subscribetab2: subscribetab2
+          }
         }
       ],
       meta: {

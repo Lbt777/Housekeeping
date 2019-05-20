@@ -79,22 +79,16 @@
         </li>
       </ul>
     </div>
-    <div class="primary-right">
-     <div class="img01"><img class="" src="./img/right_img.jpg"></div>
-      <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
-    </div>
+    <copyright/>
   </div>
 </template>
 <script>
+// 侧边
+import copyright from 'com/publicstyle/copyright'
 export default {
-  //  改变单个页面颜色
-//  beforeCreate () {
-//    document.querySelector('body').setAttribute('style', 'background:#F0F0F0')
-//  },
-//  beforeDestroy () {
-//    document.querySelector('body').setAttribute('style', '')
-//  }
-
+  components: {
+    copyright
+  }
 }
 </script>
 <style lang="less" scoped>
