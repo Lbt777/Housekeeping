@@ -29,8 +29,6 @@ import security from 'com/security'
 import personal from 'com/personal'
 // 在线预约页面
 import subscribe from 'com/subscribe'
-// 在线预约子路由页面1
-// import subscribetab1 from 'com/publicstyle/subscribetab/tab1'
 // 在线预约子路由页面2
 // import subscribetab2 from 'com/publicstyle/subscribetab/tab2'
 
@@ -121,9 +119,20 @@ export default new Router({
           components:{
             default:contact1
           }
+        },{
+          path:'',
+          components:{
+            default:contact1
+          }
         },
         {
           path:'/contact2',
+          components:{
+            default:contact2
+          }
+        },
+        {
+          path:'',
           components:{
             default:contact2
           }
@@ -169,21 +178,6 @@ export default new Router({
         default: subscribe,
         subscribe: subscribe
       },
-      // children: [
-      //   {
-      //     path: '/subscribetab1',
-      //     components: {
-      //       default: subscribetab1
-      //     }
-      //   // },
-      //   // {
-      //   //   path: '',
-      //   //   components: {
-      //   //     default: subscribetab2,
-      //   //     subscribetab2: subscribetab2
-      //   //   }
-      //   }
-      // ],
       meta: {
         title: 'e家政 - 在线预约'
       }
