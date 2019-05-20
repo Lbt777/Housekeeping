@@ -1,7 +1,7 @@
 <template>
     <div class="c container">
-      <div class="consultation"><!--咨询加盟-->
-      </div><!--咨询加盟-->
+      <!--<div class="consultation">&lt;!&ndash;咨询加盟&ndash;&gt;-->
+      <!--</div>&lt;!&ndash;咨询加盟&ndash;&gt;-->
       <div class="opportunity"><!--市场机遇-->
         <p>前所未有的市场机遇</p>
         <p class="font-30">80%的城市家庭需要家政，全国市场已超万亿</p>

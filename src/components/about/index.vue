@@ -3,13 +3,21 @@
     <div class="about-nav about-nav-list"> <!--导航条-->
       <div class="about-nav-list">
         <el-row>
-          <el-button type="danger" plain>危险按钮</el-button>
-          <el-button type="danger" plain>危险按钮</el-button>
-          <el-button type="danger" plain>危险按钮</el-button>
-          <el-button type="danger" plain>危险按钮</el-button>
-          <el-button type="danger" plain>危险按钮</el-button>
-          <el-button type="danger" plain>危险按钮</el-button>
-          <el-button type="danger" plain>危险按钮</el-button>
+          <router-link to="/contact1">
+          <el-button type="danger" plain>
+            企业介绍
+          </el-button>
+          </router-link>
+          <router-link to="/contact2">
+          <el-button type="danger" plain>
+            团队介绍
+          </el-button>
+          </router-link>
+          <el-button type="danger" plain>企业动态</el-button>
+          <el-button type="danger" plain>行业新闻</el-button>
+          <el-button type="danger" plain>常见问题</el-button>
+          <el-button type="danger" plain>e家政视频</el-button>
+          <el-button type="danger" plain>联系方式</el-button>
         </el-row>
       </div>
     </div><!--导航条-->
