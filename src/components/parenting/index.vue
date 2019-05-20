@@ -395,4 +395,7 @@ export default {
         font-size: 14px;
         text-align: center;
     }
+    .product_list ul{
+        margin-bottom: 40px;
+    }
 </style>

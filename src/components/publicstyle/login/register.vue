@@ -11,7 +11,7 @@
                 </el-input>
                 <div class="btns">
                     <span v-show="sendAuthCode" class="auth_text auth_text_blue"  @click="getAuthCode">获取验证码</span>
-                    <span v-show="!sendAuthCode" class="auth_text"> <span class="auth_text_blue">{{auth_time}} </span> 秒之重新发送验证码</span>
+                    <span v-show="!sendAuthCode" class="auth_text"><span class="auth_text_blue codes">{{auth_time}}</span>秒之重新发送验证码</span>
                 </div>
             </div>
             <div class="group-input">
@@ -44,7 +44,6 @@
     </div>
 </template>
 <script>
-import './register'
 export default {
   data () {
     return {

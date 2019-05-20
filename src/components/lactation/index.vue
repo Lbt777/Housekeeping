@@ -1,5 +1,5 @@
 <template>
-  <div class="container clearfix">
+  <div class="laction">
     <div class="top-des">
       <h6>您是否对催乳师感到疑惑？</h6>
       <p>催乳师，是对专门催乳的人员的一种称呼，
@@ -7,6 +7,7 @@
         乳少等症状的专业护理人员。</p>
       <b></b>
     </div>
+    <div class="container clearfix">
     <div class="primary">
     <div class="primary-left">
       <div class="modules01">
@@ -401,6 +402,7 @@
     </div>
   </div>
   </div>
+  </div>
 </template>
 <script>
 export default {
@@ -434,7 +436,6 @@ export default {
 </script>
 <style lang="less" scoped >
   @import '~static/css/common.less';
-
   .modules01 ul li{
    background: url("./img/cuiru-bg2.jpg") no-repeat center ;
     width: 240px;
@@ -447,20 +448,20 @@ export default {
   a{
     cursor:pointer
   }
-  .container .top-des{
-    padding: 50px 0px;
+  .laction .top-des{
+    padding: 50px 75px;
     position: relative;
     background: @whiteColor;
   }
-.container .top-des h6{
+.laction .top-des h6{
     color: #E95513;
     font-size: 18px;
     margin-bottom: 15px;
 }
-  .container .top-des p{
+  .laction .top-des p{
     color: #E95513;
   }
-  .container  .top-des b {
+  .laction .top-des b {
     display: block;
     position: absolute;
     left: 43px;

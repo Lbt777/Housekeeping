@@ -2,8 +2,8 @@
     <div class="over">
         <form class="login">
             <div class="font-16 viptxt">会员登录</div>
-            <el-input placeholder="请输入账号" v-model="input" clearable></el-input>
-            <el-input placeholder="请输入密码" v-model="input" clearable></el-input>
+            <el-input placeholder="请输入账号" v-model="input1" clearable></el-input>
+            <el-input placeholder="请输入密码" v-model="input2" clearable></el-input>
             <slide-verify :l="42" :r="10" :w="310" :h="155" @success="onSuccess" @fail="onFail" @refresh="onRefresh" :slider-text="text"></slide-verify>
             <div class="msg">
                 <div>{{msg}}</div>
@@ -17,6 +17,8 @@
 export default {
   data () {
     return {
+      input1: '',
+      input2: '',
       msg: '',
       text: '向右滑',
       input: ''

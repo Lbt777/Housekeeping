@@ -1,5 +1,6 @@
 <template>
-    <div class="c container">
+<div class="c">
+    <div class="container">
       <!--<div class="consultation">&lt;!&ndash;咨询加盟&ndash;&gt;-->
       <!--</div>&lt;!&ndash;咨询加盟&ndash;&gt;-->
       <div class="opportunity"><!--市场机遇-->
@@ -398,6 +399,7 @@
         <img src="./image/hzhb7.png">
       </div><!--战略合作伙伴-->
     </div>
+  </div>
 </template>
 <script>
 export default {
@@ -413,6 +415,7 @@ export default {
     height: 200px;
   }
   .opportunity{
+    padding-top: 20px;
     margin: 80px 0 80px 0;
     text-align: center;
     p:first-child{
@@ -490,7 +493,7 @@ export default {
         font-weight: 600;
         float: left;
         color: @grayorangeColor;
-        margin-left: 15px;
+        margin-left: 14px;
       }
       span:last-child{
         color: @whiteColor;
@@ -510,7 +513,7 @@ export default {
   }
   .assist .assist-list li{
     width: 20%;
-    height: 250px;
+    height: 218px;
     background: url("./image/hzhb2.png") no-repeat;
     background-size: 100%;
     p:first-child{
@@ -528,14 +531,13 @@ export default {
   }
   .assist .assist-list .list2{
     width: 20%;
-    height: 250px;
+    height: 218px;
     background: url("./image/hzhb3.png") no-repeat;
     background-size: 100%;
   }
   .assist .list-assist li{
-    width: 20%;
-    height: 250px;
-    margin-top: -141px;
+    width: 218px;
+    height: 218px;
     background: url("./image/hzhb4.png") no-repeat;
     background-size: 100%;
     p:first-child{
@@ -553,7 +555,7 @@ export default {
     margin-left: 110px;
   }
   .assist .list-assist{
-    margin-right: 110px;
+    margin-top: -108px;
   }
   .service{
     margin-top: 40px;

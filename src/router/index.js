@@ -238,8 +238,7 @@ export default new Router({
     {
       path: '/subscribe',
       components: {
-        default: subscribe,
-        subscribe: subscribe
+        default: subscribe
       },
       children: [
         {
@@ -249,7 +248,20 @@ export default new Router({
           }
         },
         {
+          path: '/subscribetab1',
+          components: {
+            default: subscribetab1
+          }
+        },
+        {
           path: '',
+          components: {
+            default: subscribetab2,
+            subscribetab2: subscribetab2
+          }
+        },
+        {
+          path: '/subscribetab2',
           components: {
             default: subscribetab2,
             subscribetab2: subscribetab2

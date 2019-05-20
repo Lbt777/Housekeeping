@@ -429,7 +429,7 @@ export default {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-left: 111px;
+    margin-left: 115px;
     position: relative;
     top: 30px;
   }
@@ -444,8 +444,8 @@ export default {
     text-align: center;
   }
 .nurse-bg-img{
-  width: 120px;
-  height: 120px;
+  width: 86%;
+  height: 100%;
   border: 1px solid @grayorangeColor;
   border-radius: 50%;
   overflow: hidden;
