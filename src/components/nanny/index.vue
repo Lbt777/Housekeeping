@@ -437,8 +437,8 @@ export default {
       .procedure ul li .procedure-contract-list:hover .procedure-img img:last-child{
         display: inline-block;
       }
-      .procedure ul li .procedure-contract-list span:hover{
-        background: url("./image/qylc18.png") no-repeat center;
+      .procedure ul li .procedure-contract-list:hover{
+       background: url("./image/qylc18.png") no-repeat center;
       }
     }
     .r-wrap{

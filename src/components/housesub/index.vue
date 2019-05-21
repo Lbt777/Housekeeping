@@ -199,8 +199,9 @@
             <b></b>
           </span>
         </div>
-        <div><img src="./img/jzfw_img4.png"></div>
+        <div class="girl-top"><img src="./img/jzfw_img4.png"></div>
       </div>
+      <div class="fenge-line"></div>
       <div class="module04">
         <div class="module01-title">
           <span>
@@ -212,49 +213,54 @@
           <ul>
             <li>
               <em>
-                <a><img src="http://www.51ejz.com/upimages/62d7324a-c495-4106-b0c4-ca6ea5bda59e.jpg"></a>
+                <a><img src="./img/baojieshi01.jpg"></a>
               </em>
-              <span><b>赵家群|</b> 安徽</span>
-              <i>46岁&nbsp;10年工作经验</i>
+              <span id="bjs-padding">万大妈 安徽</span>
+              <i>39岁&nbsp;9年工作经验</i>
             </li>
             <li>
               <em>
-                <a><img src="http://www.51ejz.com/upimages/62d7324a-c495-4106-b0c4-ca6ea5bda59e.jpg"></a>
+                <a><img src="./img/baojieshi02.jpg"></a>
               </em>
-              <span><b>赵家群|</b> 安徽</span>
-              <i>46岁&nbsp;10年工作经验</i>
+              <span id="bjs-padding1">李大妈 重庆</span>
+              <i>45岁&nbsp;10年工作经验</i>
             </li>
             <li>
               <em>
-                <a><img src="http://www.51ejz.com/upimages/62d7324a-c495-4106-b0c4-ca6ea5bda59e.jpg"></a>
+                <a><img src="./img/baojieshi03.jpg"></a>
               </em>
-              <span><b>赵家群|</b> 安徽</span>
-              <i>46岁&nbsp;10年工作经验</i>
+              <span id="bjs-padding2">万大妈 太原</span>
+              <i>46岁&nbsp;8年工作经验</i>
             </li>
             <li>
               <em>
-                <a><img src="http://www.51ejz.com/upimages/62d7324a-c495-4106-b0c4-ca6ea5bda59e.jpg"></a>
+                <a><img src="./img/baojieshi04.jpg"></a>
               </em>
-              <span><b>赵家群|</b> 安徽</span>
-              <i>46岁&nbsp;10年工作经验</i>
+              <span  id="bjs-padding3">刘大妈 上海</span>
+              <i>41岁&nbsp;7年工作经验</i>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="primary-right">
-      <div class="img01"><img class="" src="./img/right_img.jpg"></div>
-      <div class="img02"><img class="" src="./img/right_img2.jpg"></div>
-    </div>
+    <copyright/>
   </div>
 </template>
 <script>
+import copyright from 'com/publicstyle/copyright'
 export default {
+  components: {
+    copyright
+  }
 }
 </script>
 <style lang="less" scoped>
   @import "~static/css/common.less";
-
+.nav-top{
+  background: white;
+  height: 40px;
+  line-height: 40px;
+}
   .primary{
     width: 950px;
     float: left;
@@ -286,10 +292,10 @@ export default {
   }
   .module01{
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .module01-title span {
-    color: #333333;
+    color: @darkgreyColor;
     font-size: 24px;
     display: inline-block;
     border: 1px solid #dadada;
@@ -329,7 +335,7 @@ export default {
   .ul-left li span {
     display: block;
     line-height: 73px;
-    color: #333333;
+    color: @darkgreyColor;
     font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -483,4 +489,10 @@ export default {
   } .imames-bj  ul li {
      margin-left: 50px;
     }
+  .girl-top{
+    margin-top: 40px;
+  }
+  #bjs-padding,#bjs-padding1,#bjs-padding2,#bjs-padding3 {
+    padding-left: 25px;
+  }
 </style>
