@@ -113,21 +113,12 @@ export default {
         label: '2小时'
       }, {
         value: '选项2',
-        label: '3小时'
-      }, {
-        value: '选项3',
         label: '4小时'
       }, {
-        value: '选项4',
-        label: '5小时'
-      }, {
-        value: '选项5',
+        value: '选项3',
         label: '6小时'
       }, {
-        value: '选项6',
-        label: '7小时'
-      }, {
-        value: '选项7',
+        value: '选项4',
         label: '8小时'
       }],
       value4: '',

@@ -6,8 +6,8 @@ import router from './router'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import SlideVerify from 'vue-monoplasty-slide-verify'
-Vue.use(SlideVerify)
 Vue.use(Element)
+Vue.use(SlideVerify)
 // 修改标题
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {
