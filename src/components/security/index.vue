@@ -87,14 +87,18 @@
             </ul>
           </div>
         </div><!--中间左边-->
-      <div class="security-r fr">
-          afdf
+        <div class="security-r fr">
+          <copyright/>
         </div><!--中间右边-->
       </div><!--中间内容-->
     </div>
 </template>
 <script>
+  import copyright from 'com/publicstyle/copyright'
 export default {
+  components: {
+    copyright
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -123,6 +127,7 @@ export default {
       .security-title{
         text-align: center;
         margin-bottom: 45px;
+        margin-top: 45px;
         .hr1{
           width: 43px;
           height: 4px;
@@ -153,6 +158,9 @@ export default {
             p{
               margin-top: 25px;
               line-height: 25px;
+              height: 45px;
+              text-overflow: ellipsis;
+              overflow: hidden;
             }
             .backg{
               display: none;

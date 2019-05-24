@@ -6,7 +6,7 @@
       <img src="./image/fwcn.jpg"/>
     </div>
     <ul class="information-warp">
-      <li>
+      <li class="in-for">
         <div class="information-img">
           <img src="./image/lxfs.jpg"/>
           <img src="./image/lxfs1.jpg"/>
@@ -27,9 +27,8 @@
         <span class="font-12">电话：Tel</span>
         <br>
         <br>
-        <p></p>
         <p>400-666-4555</p>
-        <br>
+        <p>&nbsp;</p>
       </li>
       <li>
         <div class="information-img">
@@ -41,7 +40,7 @@
         <br>
         <br>
         <p>jsfys888@163.com</p>
-        <br>
+        <p>&nbsp;</p>
       </li>
       <li>
         <div class="information-img">
@@ -60,14 +59,37 @@
       <p>地图e家政</p>
       <span>&nbsp;&nbsp;&nbsp;&nbsp;   ap e Housekeeping</span>
     </div>
-    <div></div>
+    <div class="information-maps">
+
+
+    </div>
     <div class="information-phon information-map">
       <p> 在线预约</p>
       <span>&nbsp;&nbsp;&nbsp;&nbsp;       nline Booking</span>
     </div>
-    <div class="information-list"></div>
   </div>
 </template>
+<style>
+  .el-dropdown {
+    vertical-align: top;
+  }
+  .el-dropdown + .el-dropdown {
+    margin-left: 15px;
+  }
+  .el-icon-arrow-down {
+    font-size: 12px;
+  }
+</style>
+
+<script>
+  export default {
+    methods: {
+      handleClick() {
+        alert('button click');
+      }
+    }
+  }
+</script>
 <script>
 export default {}
 </script>
@@ -86,12 +108,17 @@ export default {}
   }
   .information-warp {
     text-align: center;
+    .in-for{
+      margin-left: 0;
+    }
     li{
       width: 25%;
       border-left: 1px solid @lightgrey;
       p:last-child{
         border-bottom: 1px solid @lightgrey;
         padding-bottom: 20px;
+        display: inline-block;
+        width: 80%;
       }
       .information-img{
         display: inline-block;
@@ -113,13 +140,15 @@ export default {}
     li:hover p:last-child{
       border-bottom: 1px solid @orangeColor;
       padding-bottom: 20px;
+      display: inline-block;
+      width: 80%;
     }
     li:first-child{
       border-left:none;
     }
   }
   .information-map{
-    margin: 40px 0 0 70px;
+    margin: 70px 0 40px 0;
     background: url('./image/lxfs.png') no-repeat center;
     height: 75px;
     text-align: center;
@@ -131,6 +160,16 @@ export default {}
       font-size: 16px;
       color: @lightgrey;
     }
+  }
+  .information-maps{
+    height: 380px;
+    border: 1px solid rgb(204, 204, 204);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    background-image: url("http://api.map.baidu.com/images/bg.png");
+    color: rgb(0, 0, 0);
+    text-align: left;
   }
   .information-phon{
     margin: 40px 0 0 70px;
