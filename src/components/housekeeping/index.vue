@@ -9,66 +9,78 @@
       <ul class="serve clearfix">
         <li>
           <div class="primary-dev primary-dev01">
+            <div class="primary-dev002">
             <i></i>
             <a href="#"><h6>日常保洁</h6></a>
             <a href="#"><p>钟点工/小时工/清洁护理</p></a>
             <a href="#">
               <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
             </a>
+            </div>
           </div>
         </li>
         <li>
           <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
-            </a>
-          </div>
-        </li>
-      </ul>
-      <ul class="serve server-ul01 clearfix">
-        <li>
-          <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
-            </a>
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
       <ul class="serve server-ul01 clearfix">
         <li>
           <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
-            </a>
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
           </div>
         </li>
         <li>
           <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
-            </a>
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="serve server-ul01 clearfix">
+        <li>
+          <div class="primary-dev">
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="primary-dev">
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
@@ -152,12 +164,15 @@ export default {
   .primary-dev{
   width: 300px;
     height: 150px;
-    margin-left: 130px;
+    margin-left: 110px;
     &:hover{
       background: #F0F0F0;
     }
   }
   .primary-dev01{}
+ .primary-dev002{
+  margin-left: 70px;
+ }
   .container .primary ul li p{
     color: @grayColor;
     font-size: 16px;
