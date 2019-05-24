@@ -97,13 +97,17 @@
           </div>
         </div><!--中间左边-->
         <div class="promise-r fr">
-          afdf
+          <copyright/>
         </div><!--中间右边-->
       </div><!--中间内容-->
     </div>
 </template>
 <script>
+  import copyright from 'com/publicstyle/copyright'
 export default {
+  components: {
+    copyright
+  }
 }
 </script>
 <style lang="less" scoped>

@@ -53,18 +53,17 @@
           </li>
           <div class="about-g">更多服务>></div>
         </ul>
-        <div class="about-tl">
+        <div class="about-tl about-tl-img">
           <div class="about-tl-img"> </div>
           <span>电话咨询：</span>
           <span>400-666-4555</span>
         </div>
       </div><!--中间右边-->
     </div><!--中间内容-->
-
   </div>
 </template>
 <script>
-export default {
+  export default {
 }
 </script>
 <style lang="less" scoped>
@@ -93,9 +92,9 @@ export default {
       padding: 20px;
     }
     .about-r{
-      background: @whiteColor;
       width: 20%;
       .about-title{
+        background: @whiteColor;
         border-bottom: 1px solid #cccccc;
         p{
           padding: 10px 0 15px 10px ;
@@ -104,6 +103,7 @@ export default {
         }
       }
       .about-lists{
+        background: @whiteColor;
         text-align: center;
         margin:0 auto;
         padding-top: 20px;
@@ -140,14 +140,33 @@ export default {
       }
     }
     .about-tl{
+      background: @whiteColor;
       margin: 20px 0 20px 0;
+      line-height: 50px;
       .about-tl-img{
         background: url("./image/aboiut.png") no-repeat;
         height: 35px;
         margin-left: 20px;
         width: 40px;
         display: inline-block;
+        margin-bottom: -12px;
       }
     }
+  }
+  .el-button--danger.is-plain {
+     color: @orangeColor;
+     border-color: @lightorangeColor;
+   }
+  .el-button--danger.is-plain:active {
+    background: @darkorangeColor;
+    color: #FFF;
+  }
+  .el-button--danger.is-plain:hover {
+    background: @orangeColor;
+    color: #FFF;
+  }
+  .el-button--danger.is-plain:focus, .el-button--danger.is-plain:hover {
+    background: @orangeColor;
+    color: #FFF;
   }
 </style>

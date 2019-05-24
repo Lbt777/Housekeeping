@@ -33,6 +33,10 @@ import promise from 'com/promise'
 import security from 'com/security'
 // 个人中心页面
 import personal from 'com/personal'
+// 个人中心页面tab1
+import personaltab1 from 'com/publicstyle/personaltab/personaltab1'
+// 个人中心页面tab
+import personaltab2 from 'com/publicstyle/personaltab/personaltab2'
 // 在线预约页面
 import subscribe from 'com/subscribe'
 // 在线预约子路由页面1
@@ -228,9 +232,36 @@ export default new Router({
     {
       path: '/personal',
       components: {
-        default: personal,
-        personal: personal
+        default: personal
       },
+      children: [
+        {
+          path: '',
+          components: {
+            default: personaltab1
+          }
+        },
+        {
+          path: '/personaltab1',
+          components: {
+            default: personaltab1
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: personaltab2,
+            personaltab2: personaltab2
+          }
+        },
+        {
+          path: '/personaltab2',
+          components: {
+            default: personaltab2,
+            personaltab2: personaltab2
+          }
+        }
+      ],
       meta: {
         title: 'e家政 - 个人中心'
       }
