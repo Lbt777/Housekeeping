@@ -16,9 +16,6 @@
         padding-bottom: 8px;
         font-weight: 700;
     }
-    /deep/.el-input--suffix .el-input__inner{
-        margin-top: 25px;
-    }
     button{
         height: 40px;
         width: 310px;
@@ -33,13 +30,19 @@
         color: @darkorangeColor;
     }
 }
-#app /deep/ .el-carousel.el-carousel--horizontal{
-    display: none;
-}
 #slideVerify{
     margin-top: 25px;
 }
 .msg{
     width: 100%;
     height: 20px;
+}
+/deep/.el-form-item__content{
+    margin-left: 0!important;
+}
+/deep/label{
+    display: none;
+}
+/deep/.el-input{
+    margin-top: 20px;
 }
