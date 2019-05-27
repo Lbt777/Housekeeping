@@ -212,7 +212,7 @@ export default new Router({
           beforeEnter: (to, from, next) => {
             // 已登录 不能再进行登录
             var token = window.localStorage.getItem('token')
-            if (token) {
+            if (token === false) {
               next('/')
             } else {
               next()
