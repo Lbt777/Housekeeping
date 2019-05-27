@@ -6,27 +6,19 @@
       <el-form-item label="姓名" prop="name">
         <el-input v-model="ruleForm.name"></el-input>
       </el-form-item>
-    </el-form>
-    <el-form :model="dynamicValidateForm" ref="dynamicValidateForm" class="demo-dynamic">
-      <el-form-item prop="email" label="电子邮箱" :rules="[
-              { required: true, message: '请输入邮箱地址', trigger: 'blur' },
-              { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }]">
-        <el-input v-model="dynamicValidateForm.email"></el-input>
+      <el-form-item label="手机号" prop="phone">
+        <el-input v-model.number="ruleForm.phone"/>
       </el-form-item>
-    </el-form>
-    <p class="personal-ps">地址</p>
-    <el-form :model="dynamicValidateForm" ref="dynamicValidateForm" class="demo-dynamic">
-      <span>地址</span>
+      <p class="personal-ps">地址</p>
+      <p class="p-input">地址</p>
       <v-distpicker :placeholders="placeholders"></v-distpicker>
-      <el-form-item prop="email" label="详细地址" :rules="[
-              { required: true, message: '请输入地址', trigger: 'blur' }]">
-        <el-input v-model="dynamicValidateForm.email"></el-input>
+      <el-form-item label="详细地址" prop="desc">
+        <el-input type="textarea" v-model="ruleForm.desc"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm('ruleForm')">保存地址</el-button>
       </el-form-item>
     </el-form>
-
   </div>
 </template>
 <script>
@@ -34,23 +26,38 @@ import VDistpicker from 'v-distpicker'
 export default {
   components: { VDistpicker },
   data () {
+    var checkPhone = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('手机号不能为空'))
+      } else {
+        const reg = /^1[3|4|5|7|8][0-9]\d{8}$/
+        console.log(reg.test(value))
+        if (reg.test(value)) {
+          callback()
+        } else {
+          return callback(new Error('请输入正确的手机号'))
+        }
+      }
+    }
     return {
       ruleForm: {
         name: '',
+        phone: '',
         region: '',
         date1: '',
-        type: []
-      },
-      dynamicValidateForm: {
-        domains: [{
-          value: ''
-        }],
-        email: ''
+        type: [],
+        desc: ''
       },
       rules: {
         name: [
           { required: true, message: '请输入名字', trigger: 'blur' },
           { min: 2, max: 5, message: '长度在 2 到 5 个字符', trigger: 'blur' }
+        ],
+        phone: [
+          {validator: checkPhone, trigger: 'blur'}
+        ],
+        desc: [
+          { required: true, message: '请填写详细地址', trigger: 'blur' }
         ]
       }
     }
@@ -94,6 +101,10 @@ export default {
     display: inline-block;
     margin-left: 20px;
     margin-bottom: 20px;
+  }
+  .p-input{
+    display: inline-block;
+    width: 100px;
   }
   /deep/.el-form-item__content{
     display: inline-block;
@@ -141,5 +152,12 @@ export default {
     border-color: #66b1ff;
     color: #FFF;
     line-height: 40px;
+  }
+  /deep/.el-form-item__label{
+    width: 100px;
+    text-align: left;
+  }
+  .el-textarea{
+    margin-left: 20px;
   }
 </style>

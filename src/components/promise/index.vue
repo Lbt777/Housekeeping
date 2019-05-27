@@ -103,7 +103,7 @@
     </div>
 </template>
 <script>
-  import copyright from 'com/publicstyle/copyright'
+import copyright from 'com/publicstyle/copyright'
 export default {
   components: {
     copyright

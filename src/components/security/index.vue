@@ -18,11 +18,10 @@
             <ul class="security-list">
               <li class="list1">
                 <div class="list1-box fl"></div>
-                <div class="list1-title fr">
+                <div class="list1-title  fr">
                   <h3>实名认证</h3>
-                  <span>REAL NAME AUTHENTICATION</span>
+                  <span>REAL NAME </span>
                   <p>e家政对每位阿姨进行第三方身份认证，确保为您服务的阿姨身份信息真实可靠。</p>
-                  <div class="backg"></div>
                 </div>
               </li>
               <li class="list2">
@@ -31,7 +30,6 @@
                   <h3>健康证明</h3>
                   <span>EMDICAL CERTIFICATE</span>
                   <p>e家政将定期安排阿姨进行体检，医院开据健康证明方可上岗工作。</p>
-                  <div class="backg"></div>
                 </div>
               </li>
               <li class="list3">
@@ -40,7 +38,6 @@
                   <h3>家政保险</h3>
                   <span>HOME INSURANCE</span>
                   <p>e家政为家政服务阿姨办理家政服务保险，保障您的财产和物品安全。</p>
-                  <div class="backg"></div>
                 </div>
               </li>
               <li class="list4">
@@ -49,7 +46,6 @@
                   <h3>会员制度</h3>
                   <span>MEMBER SYSTEM</span>
                   <p>每一位成为e家政会员的用户都可以享受e家政后期服务的跟踪回访以及相关的优惠活动。</p>
-                  <div class="backg"></div>
                 </div>
               </li>
               <li class="list5">
@@ -58,7 +54,6 @@
                   <h3>专业培训</h3>
                   <span>PROFESSIONAL TRAINING</span>
                   <p>每一位e家政阿姨都需要经过e家政服务技能培训，并进行考核和认证，保证优质的家政服务。</p>
-                  <div class="backg"></div>
                 </div>
               </li>
             </ul>
@@ -94,7 +89,7 @@
     </div>
 </template>
 <script>
-  import copyright from 'com/publicstyle/copyright'
+import copyright from 'com/publicstyle/copyright'
 export default {
   components: {
     copyright
@@ -162,29 +157,6 @@ export default {
               text-overflow: ellipsis;
               overflow: hidden;
             }
-            .backg{
-              display: none;
-              opacity: 0;
-              position: absolute;
-              right: 0;
-              top: 0;
-              width: 265px;
-              height: 162px;
-              background-color: #FF8244;
-              animation: backg 1s;
-            }
-            @keyframes backg {
-              0%{
-                transform:rotate(0deg);
-                opacity:0;
-                width: 0;
-              }
-              100%{
-                transform:rotate(0deg);
-                opacity: 1;
-                width: 265px;
-              }
-            }
           }
         }
         ul .list1{
@@ -246,9 +218,6 @@ export default {
           }
           .rh3{
             background: #FFAC52;
-          }
-          .rh3{
-            display: #FFAC52;
           }
         }
         li:first-child{

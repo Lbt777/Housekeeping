@@ -60,36 +60,9 @@
       <span>&nbsp;&nbsp;&nbsp;&nbsp;   ap e Housekeeping</span>
     </div>
     <div class="information-maps">
-
-
-    </div>
-    <div class="information-phon information-map">
-      <p> 在线预约</p>
-      <span>&nbsp;&nbsp;&nbsp;&nbsp;       nline Booking</span>
     </div>
   </div>
 </template>
-<style>
-  .el-dropdown {
-    vertical-align: top;
-  }
-  .el-dropdown + .el-dropdown {
-    margin-left: 15px;
-  }
-  .el-icon-arrow-down {
-    font-size: 12px;
-  }
-</style>
-
-<script>
-  export default {
-    methods: {
-      handleClick() {
-        alert('button click');
-      }
-    }
-  }
-</script>
 <script>
 export default {}
 </script>
@@ -170,11 +143,5 @@ export default {}
     background-image: url("http://api.map.baidu.com/images/bg.png");
     color: rgb(0, 0, 0);
     text-align: left;
-  }
-  .information-phon{
-    margin: 40px 0 0 70px;
-    background: url('./image/lxfs1.png') no-repeat center;
-    height: 75px;
-    text-align: center;
   }
 </style>
