@@ -30,99 +30,95 @@
     border-color: @darkorangeColor;
 }
 .site{
-    padding: 50px 0 5px 145px;
+    padding: 50px 114px 5px 114px;
     background: #FFF;
-    .site-item{
+    /deep/.el-form-item{
         margin-bottom: 20px;
-        .list1{
-            display: inline-block;
-            margin-left: 30px;
-        }
-        .input{
-            height: 40px;
-            width: 346px;
-            border-radius: 5px;
-            border: 1px solid #dcdfe6;
-            input{
-                height: 80%;
-                margin-top: 4px;
-                margin-left: 15px;
-                width: 90%;
-                border: none;
-                font-size: 18px;
-                color: #464a4c;
-            }
-        }
-        .deviation{
-            margin-left: 50px;
-            button{
-                float: right;
-                margin-right: 15px;
-                transform: translateY(-25px);
-                background: transparent;
-                border: none;
-                span{
-                    transform: translateY(2px);
-                    margin-right: 2px;
-                }
-            }
-        }
-        .deviation2{
-            width: 200px;
-        }
-        span{
-            color: #5a5a5a;
-            float: left;
-        }
-        ul{
-            width: 100%;
-            li{
-                height: 88px;
-                width: 238px;
-                background: #f4f4f4;
-                padding: 10px 15px 8px 15px;
-                margin-right: 20px;
-                margin-top: 20px;
-                div{
-                    color: #ff7e00;
-                    float: left;
-                    width: 100%;
-                    line-height: 26px;
-                }
-                p{
-                    color: #808080;
-                    margin-top: 3px;
-                    float: left;
-                    width: 100%;
-                    font-size: 12px;
-                    line-height: 20px;
-                }
-            }
-        }
     }
 }
-input:focus{
-    outline: none;
+
+/deep/.el-form-item__label{
+  color: #5a5a5a;
+  font-size: 22px;
+  width: 13%!important;
+  margin-right: 10px;
+}
+/deep/.el-form-item__content{
+  width: 40%;
+  height: 36px;
+  display: inline-block;
+  margin-left: 0!important;
+}
+/deep/.el-col.el-col-11 .el-form-item__content{
+  width: 100%;
+}
+/deep/.line{
+  text-align: center;
+}
+/deep/.el-checkbox{
+  height: 88px;
+  width: 238px;
+  background: #f4f4f4;
+  padding: 10px 15px 8px 15px;
+}
+/deep/.el-checkbox__label{
+  font-size: 18px;
+  color: #ff7e00!important;
+  position: relative;
+  float: left;
+  margin-right: 8px;
+  width: 100%;
+  line-height: 26px;
+  margin-top: -12px;
+}
+/deep/.el-form-item:nth-child(6){
+  margin-bottom: 0;
+}
+/deep/.el-form-item:nth-child(6) .el-form-item__content{
+  width: 888px;
+}
+/deep/.el-form-item:nth-child(6) .el-form-item__error{
+  position: absolute;
+  top: 46px;
+  left: 138px;
+}
+/deep/.el-form-item:nth-child(6) .el-checkbox-group{
+  overflow: hidden;
+  margin-left: 130px;
+  margin-top: -39px;
+  .el-checkbox{
+    margin-left: 8px;
+    p{
+      color: #808080;
+      margin-top: 3px;
+      float: left;
+      width: 100%;
+      font-size: 12px;
+      line-height: 20px;
+      white-space: normal;
+    }
+  }
+}
+/deep/.el-form-item span{
+  float: right!important;
+}
+/deep/.el-form-item:last-child{
+  text-align: center;
+  button{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: #FF7E00;
+    border: none;
+    font-size: 22px;
+    margin-top: 15px;
+    span{
+      float: inherit!important;
+      color: #fff;
+    }
+  }
 }
 .el-select-dropdown__item{
-    padding: 0 20px;
-}
-.el-scrollbar__view.el-select-dropdown__list li{
-    float: none;
-}
-/deep/.el-button.el-button--default span{
-    width: 450px;
-    height: 44px;
-    line-height: 44px;
-    text-align: center;
-    background: #fd8b1b;
-    color: #FFF;
-    font-size: 22px;
-    display: inline-block;
-    text-decoration: none;
-}
-/deep/.el-button.el-button--default{
-    border-color: transparent;
-    margin: auto;
-    display: inherit;
+  float: inherit!important;
+  padding-left: 10px;
 }

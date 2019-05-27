@@ -1,10 +1,5 @@
 <template>
-  <div class="container tab">
-    <el-steps align-center :active="active" finish-status="success">
-        <el-step title="1.填写服务信息"></el-step>
-        <el-step title="2.填写客户信息"></el-step>
-        <el-step title="3.预约订单确认"></el-step>
-    </el-steps>
+  <div class="container">
     <div class="introduce font-14 container">
       <p class="in-title font-24">月嫂</p>
       <p>服务对象：产妇，0-3月宝宝</p>
@@ -12,99 +7,62 @@
       <p>服务内容：照顾产妇、照顾宝宝</p>
       <p>预订须知：协助产妇做些粗活，帮助产妇做她不方便的活，重大节假日可能上浮，拥有特殊技能可能会加价，需要阿姨确认是否接单</p>
     </div>
-    <div class="site">
-        <div class="site-item">
-            <span class="font-22">服务区域</span>
-            <div class="list1">
-                <v-distpicker></v-distpicker>
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">服务地址</span>
-            <div class="list1 input">
-                <input type="text">
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">开始时间</span>
-            <div class="list1">
-                <el-date-picker
-                    v-model="value1"
-                    type="datetime"
-                    format="yyyy-MM-dd HH:mm"
-                    value-format="yyyy-MM-dd HH:mm"
-                    placeholder="选择日期时间">
-                </el-date-picker>
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">服务时长</span>
-            <div class="list1">
-                <el-select v-model="value4" clearable placeholder="请选择">
-                    <el-option
-                    v-for="item in options"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                    </el-option>
-                </el-select>
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">特别需求</span>
-            <div class="list1 input">
-                <input type="text">
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">服务内容</span>
-            <div class="list1">
-            <ul>
-              <li>
-                <div class="font-18">月子餐</div>
-                <p>为产妇制作营养餐，合理安排产妇饮食</p>
-              </li>
-              <li>
-                <div class="font-18">婴儿按摩</div>
-                <p>通过给婴儿按摩，促进神经系统发育，促进生长及智能发育</p>
-              </li>
-              <li>
-                <div class="font-18">乳房护理</div>
-                <p>帮助产妇清洗、热敷、按摩乳房、刺激哺乳</p>
-              </li>
-              <li>
-                <div class="font-18">婴儿服务</div>
-                <p>给新生儿洗澡、喂奶、换尿布、洗新生儿衣物等</p>
-              </li>
-              <li>
-                <div class="font-18">产妇按摩</div>
-                <p>指导产妇做好产后恢复操，为恢复产妇体型</p>
-              </li>
-            </ul>
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">联系人</span>
-            <div class="list1 input deviation">
-                <input type="text">
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">手机号</span>
-            <div class="list1 input deviation">
-                <input type="text" class="fl deviation2">
-                <button v-show="Verification" @click="handleClick">点击获取验证码</button>
-                <button v-show="!Verification"><span>{{timer}}</span>秒后重新获取</button>
-            </div>
-        </div>
-        <div class="site-item">
-            <span class="font-22">验证码</span>
-            <div class="list1 input deviation">
-                <input type="text" class="deviation2">
-            </div>
-        </div>
+    <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm site">
+  <el-form-item label="服务区域">
+    <div class="list1">
+      <v-distpicker></v-distpicker>
     </div>
-    <el-button style="margin-top: 12px;" @click="next">下一步</el-button>
+  </el-form-item>
+  <el-form-item label="详细地址" prop="add">
+    <el-input v-model="ruleForm.add"></el-input>
+  </el-form-item>
+  <el-form-item prop="phone" label="手机">
+    <el-input v-model.number="ruleForm.phone"></el-input>
+  </el-form-item>
+  <el-form-item label="预约时间" required>
+    <el-col :span="11">
+      <el-form-item prop="date1">
+        <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+      </el-form-item>
+    </el-col>
+    <el-col class="line" :span="2">-</el-col>
+    <el-col :span="11">
+      <el-form-item prop="date2">
+        <el-time-picker type="fixed-time" placeholder="选择时间" v-model="ruleForm.date2" style="width: 100%;"></el-time-picker>
+      </el-form-item>
+    </el-col>
+  </el-form-item>
+  <el-form-item label="服务时长" prop="region">
+    <el-select v-model="ruleForm.region" placeholder="请选择服务时长">
+      <el-option label="两小时" value="两小时"></el-option>
+      <el-option label="四小时" value="四小时"></el-option>
+      <el-option label="六小时" value="六小时"></el-option>
+      <el-option label="八小时" value="八小时"></el-option>
+    </el-select>
+  </el-form-item>
+  <el-form-item label="服务内容" prop="type">
+    <el-checkbox-group v-model="ruleForm.type">
+      <el-checkbox label="家居保洁" name="type">
+        <div class="a1">家居保洁</div>
+        <p>房内地面、台面、厨房、卫生间、整理物品、清除垃圾</p>
+      </el-checkbox>
+      <el-checkbox label="育婴育儿" name="type">
+        <div class="a1">育婴育儿</div>
+        <p>帮助照顾稍大点的宝宝，带睡等</p>
+      </el-checkbox>
+      <el-checkbox label="代跑腿" name="type">
+        <div class="a1">代跑腿</div>
+        <p>代为办理各种事务</p>
+      </el-checkbox>
+    </el-checkbox-group>
+  </el-form-item>
+  <el-form-item label="其他需求" prop="desc">
+    <el-input type="textarea" v-model="ruleForm.desc"></el-input>
+  </el-form-item>
+  <el-form-item>
+    <el-button type="primary" @click="submitForm('ruleForm')">立即预约</el-button>
+  </el-form-item>
+</el-form>
 </div>
 </template>
 <script>
@@ -112,49 +70,69 @@ import VDistpicker from 'v-distpicker'
 export default {
   components: {VDistpicker},
   data () {
+    var phone = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('手机号不能为空'))
+      } else {
+        var reg = /^1[34578]\d{9}$/
+        if (reg.test(value) === false) {
+          return callback(new Error('请输入正确的手机号'))
+        } else {
+          callback()
+        }
+      }
+    }
     return {
-      value1: '',
-      active: 0,
-      options: [{
-        value: '选项1',
-        label: '2小时'
-      }, {
-        value: '选项2',
-        label: '3小时'
-      }, {
-        value: '选项3',
-        label: '4小时'
-      }, {
-        value: '选项4',
-        label: '5小时'
-      }, {
-        value: '选项5',
-        label: '6小时'
-      }, {
-        value: '选项6',
-        label: '7小时'
-      }, {
-        value: '选项7',
-        label: '8小时'
-      }],
-      value4: '',
-      Verification: true,
-      timer: 60
+      ruleForm: {
+        add: '',
+        phone: '',
+        region: '',
+        date1: '',
+        date2: '',
+        delivery: false,
+        type: [],
+        resource: '',
+        desc: ''
+      },
+      rules: {
+        add: [
+          // required是否必填
+          { required: true, message: '请输入详细地址', trigger: 'blur' }
+        ],
+        phone: [
+          { required: true, validator: phone, trigger: 'blur' }
+        ],
+        region: [
+          { required: true, message: '请选择服务时长', trigger: 'change' }
+        ],
+        date1: [
+          { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
+        ],
+        date2: [
+          { type: 'date', required: true, message: '请选择时间', trigger: 'change' }
+        ],
+        type: [
+          { type: 'array', required: true, message: '请至少选择一个', trigger: 'change' }
+        ],
+        resource: [
+          { required: true, message: '请选择活动资源', trigger: 'change' }
+        ],
+        desc: [
+          { required: false, message: '请填写活动形式', trigger: 'blur' }
+        ]
+      }
     }
   },
   methods: {
-    next () {
-      if (this.active++ > 2) this.active = 3
-    },
-    handleClick () {
-      this.Verification = false
-      let auth = setInterval(() => {
-        this.timer--
-        if (this.timer <= 0) {
-          this.Verification = true
-          clearInterval(auth)
+    submitForm (formName) {
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          alert('submit!')
+        } else {
+          console.log('error submit!!')
+          return false
         }
-      }, 1000)
+      })
     }
   }
 }
