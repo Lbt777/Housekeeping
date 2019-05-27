@@ -83,7 +83,7 @@
                 </span>
               </li>
               <li>
-                <i> <img src="./img/price_icon1.jpg"></i>
+                <i> <img src="./img/price_icon2.jpg"></i>
                 <h3>三星级</h3>
                 <p>
                   日常保洁
@@ -101,7 +101,7 @@
                 </span>
               </li>
               <li>
-                <i> <img src="./img/price_icon1.jpg"></i>
+                <i> <img src="./img/price_icon3.jpg"></i>
                 <h3>三星级</h3>
                 <p>
                   日常保洁
@@ -119,7 +119,7 @@
                 </span>
               </li>
               <li>
-                <i> <img src="./img/price_icon1.jpg"></i>
+                <i> <img src="./img/price_icon4.jpg"></i>
                 <h3>三星级</h3>
                 <p>
                   日常保洁
@@ -137,7 +137,7 @@
                 </span>
               </li>
               <li>
-                <i> <img src="./img/price_icon1.jpg"></i>
+                <i> <img src="./img/price_icon5.jpg"></i>
                 <h3>三星级</h3>
                 <p>
                   日常保洁
@@ -381,6 +381,10 @@ export default {
     top: -38px;
     left: 35px;
     z-index: 1;
+    transition: transform 0.5s ease-out;
+    &:hover{
+      transform: rotateZ(180deg);
+    }
   }
   .module02 .module02-content ul li h3 {
     color: #555555;

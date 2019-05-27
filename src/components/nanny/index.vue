@@ -313,7 +313,7 @@ export default {
       }
       .price-service tr td{
         background-color: @bglightdark;
-        padding: 10px 5px 10px 8px ;
+        padding: 10px 6px 10px 9px;
         font-size: 14px;
       }
       .price-service tr:first-child td:first-child{
@@ -407,7 +407,7 @@ export default {
           margin-bottom: 25px;
         }
       }
-      .procedure ul li .procedure-contract-list:hover {
+      .procedure ul li .procedure-contract-list:hover{
         color: @whiteColor;
         background-color: @orangeColor;
       }
@@ -437,8 +437,8 @@ export default {
       .procedure ul li .procedure-contract-list:hover .procedure-img img:last-child{
         display: inline-block;
       }
-      .procedure ul li .procedure-contract-list:hover{
-       background: url("./image/qylc18.png") no-repeat center;
+      .procedure ul li .procedure-contract-list span:hover{
+        background: url("./image/qylc18.png") no-repeat center;
       }
     }
     .r-wrap{
