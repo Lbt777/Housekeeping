@@ -132,6 +132,8 @@
               1200元/3次
               <br>
               1500元/5次
+              <br>
+              <div></div>
             </td>
             <td class="td_bg"></td>
           </tr>
@@ -143,6 +145,8 @@
               1200元/3次
               <br>
               1500元/5次
+              <br>
+              <div></div>
             </td>
             <td class="td_bg"></td>
           </tr>
@@ -155,6 +159,9 @@
               第二疗程
               <br>
               第三疗程
+              <br>
+              <div></div>
+             <div></div>
             </td>
             <td>
               1200元/3次
@@ -163,10 +170,15 @@
               <br>
               1200元/3次
               <br>
+              <br>
+              <div></div>
             </td>
             <td class="td_bg">
               做满两个疗程：减100并赠送乳腺养护1次
+              <br>
               做满三个疗程：减200并赠送乳腺养护1次
+              <br>
+              <div></div>
             </td>
           </tr>
           <tr>
@@ -183,11 +195,15 @@
              第一疗程
               <br>
               第二疗程
+              <br>
+              <div></div>
             </td>
             <td>
               1500元/3次
               <br>
               1500元/3次
+              <br>
+              <div></div>
             </td>
             <td class="td_bg">做满两个疗程：减100并赠送乳腺养护1次</td>
           </tr>
@@ -209,6 +225,8 @@
               第三疗程
               <br>
               第四疗程
+              <br>
+              <div></div>
             </td>
             <td>
              2000元/3次
@@ -219,6 +237,8 @@
               <br>
               2000元/3次
               <br>
+              <br>
+              <div></div>
             </td>
             <td class="td_bg">
               做满两个疗程：减100并赠送乳腺养护1次
@@ -227,6 +247,7 @@
               <br>
               做满四个疗程：减300并赠送乳腺养护1次
               <br>
+              <div></div>
             </td>
           </tr>
           <tr>
@@ -252,6 +273,7 @@
               <br>
               2000元/5次
               <br>
+              <div></div>
             </td>
             <td class="td_bg">
               做满两个疗程：减100并赠送乳腺养护1次
@@ -259,6 +281,8 @@
               做满三个疗程：减200并赠送乳腺养护1次
               <br>
               做满四个疗程：减300并赠送乳腺养护1次
+              <br>
+              <div></div>
             </td>
           </tr>
           <tr>
@@ -268,16 +292,22 @@
               A
               <br>
               B
+              <br>
+              <div></div>
             </td>
             <td>
               1800元/4次
               <br>
               2500元/6次
+              <br>
+              <div></div>
             </td>
             <td class="td_bg">
               赠送乳房外形调整1次
               <br>
               赠送乳房外形调整2次
+              <br>
+              <div></div>
             </td>
           </tr>
           </tbody>
@@ -292,28 +322,33 @@
         <div class="modules03-des">
           <ul>
           <li class="li1">
-            <a></a>
-            <p>在线预约</p>
+            <a><p>在线预约</p></a>
+
           </li>
           <li class="li2">
-            <a></a>
+            <a>
             <p>体验服务</p>
+            </a>
           </li>
           <li class="li3">
-            <a></a>
+            <a>
             <p>定制套餐</p>
+            </a>
           </li>
           <li class="li4">
-            <a></a>
+            <a>
             <p>平台派单</p>
+            </a>
           </li>
           <li class="li5">
-            <a></a>
+            <a>
             <p>完成服务</p>
+            </a>
           </li>
           <li class="li6">
-            <a></a>
+            <a>
             <p>客户回访</p>
+            </a>
           </li>
           </ul>
         </div>
@@ -419,7 +454,7 @@ export default {
       console.log(tab, event)
     },
     handleScroll () {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      var scrollTop = window.scrollTop || document.documentElement.scrollTop || document.body.scrollTop
       var offsetTop = document.querySelector('.primary-right').offsetTop
       if (scrollTop <= 1040) {
         offsetTop = 1040 - Number(scrollTop)
@@ -666,10 +701,16 @@ export default {
   .modules03-des ul .li1 a{
     background-position: 0 0;
     &:hover{
+      p{
+        color: @grayorangeColor;
+      }
       background-position: 0px 100px;
     }
   }
-  .modules03-des ul .li1:hover{ p{color: @grayorangeColor;} }
+  .modules03-des ul a p{
+    position: relative;
+    top: 122px;
+  }
   .modules03-des ul .li2 a{
     background-position: -100px 0;
     &:hover{

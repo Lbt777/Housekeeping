@@ -9,72 +9,78 @@
       <ul class="serve clearfix">
         <li>
           <div class="primary-dev primary-dev01">
+            <div class="primary-dev002">
             <i></i>
             <a href="#"><h6>日常保洁</h6></a>
             <a href="#"><p>钟点工/小时工/清洁护理</p></a>
             <a href="#">
-              <img class="btn-prev01" src="./img/index-icon-1.png">
-              <img class="btn-prev02" src="./img/index-icon-3-1.png">
+              <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
             </a>
+            </div>
           </div>
         </li>
         <li>
           <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <img class="btn-prev01" src="./img/index-icon-1.png">
-              <img class="btn-prev02" src="./img/index-icon-3-1.png">
-            </a>
-          </div>
-        </li>
-      </ul>
-      <ul class="serve server-ul01 clearfix">
-        <li>
-          <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <img class="btn-prev01" src="./img/index-icon-1.png">
-              <img class="btn-prev02" src="./img/index-icon-3-1.png">
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <img class="btn-prev01" src="./img/index-icon-1.png">
-              <img class="btn-prev02" src="./img/index-icon-3-1.png">
-            </a>
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
       <ul class="serve server-ul01 clearfix">
         <li>
           <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <img class="btn-prev01" src="./img/index-icon-1.png">
-              <img class="btn-prev02" src="./img/index-icon-3-1.png">
-            </a>
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
           </div>
         </li>
         <li>
           <div class="primary-dev">
-            <i></i>
-            <a href="#"><h6>日常保洁</h6></a>
-            <a href="#"><p>钟点工/小时工/清洁护理</p></a>
-            <a href="#">
-              <img class="btn-prev01" src="./img/index-icon-1.png">
-              <img class="btn-prev02" src="./img/index-icon-3-1.png">
-            </a>
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="serve server-ul01 clearfix">
+        <li>
+          <div class="primary-dev">
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="primary-dev">
+            <div class="primary-dev002">
+              <i></i>
+              <a href="#"><h6>日常保洁</h6></a>
+              <a href="#"><p>钟点工/小时工/清洁护理</p></a>
+              <a href="#">
+                <router-link to="/housesub"><div class="btn-prev01"></div></router-link>
+              </a>
+            </div>
           </div>
         </li>
       </ul>
@@ -94,11 +100,10 @@ export default {
 <style lang="less" scoped>
  @import "~static/css/common.less";
   .container{
-    //  position: relative;
-    // top: 620px;
     max-width: 1200px;
     margin: 0 auto;
     .mid-nav{
+      margin-top: 40px;
       height: 40px;
        background:@whiteColor;
     }
@@ -117,7 +122,7 @@ export default {
   .parting-line{
     max-width: 1200px;
     height: 15px;
-    background: #F0F0F0;
+    background: @bglightdark;
   }
   .primary{
     width: 950px;
@@ -159,18 +164,45 @@ export default {
   .primary-dev{
   width: 300px;
     height: 150px;
-    margin-left: 130px;
+    margin-left: 110px;
+    &:hover{
+      background: #F0F0F0;
+    }
   }
   .primary-dev01{}
+ .primary-dev002{
+  margin-left: 70px;
+ }
   .container .primary ul li p{
     color: @grayColor;
     font-size: 16px;
     margin-bottom: 20px;
   }
 .btn-prev01{
-  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url("./img/index-icon-1.png")no-repeat;
+  &:hover{
+    background: url("   ./img/index-icon-3-1.png")no-repeat;
+  }
 }
-.btn-prev02{
-  display: none;
-}
+ .primary-dev:hover{
+   opacity: 1;
+   animation-name: hvr-buzz-out;
+   animation-duration: 0.75s;
+   animation-timing-function: linear;
+   animation-iteration-count: 1;
+ }
+ @keyframes hvr-buzz-out{
+ 10%{transform: translateX(3px) rotate(2deg)};
+ 20%{transform: translateX(-3px) rotate(-2deg)};
+ 30%{transform: translateX(3px) rotate(2deg)};
+ 40%{transform: translateX(-3px) rotate(-2deg)};
+ 50%{transform: translateX(2px) rotate(1deg)};
+ 60%{transform: translateX(-2px) rotate(-1deg)};
+ 70%{transform: translateX(2px) rotate(1deg)};
+ 80%{transform: translateX(-2px) rotate(-1deg)};
+ 90%{transform: translateX(1px) rotate(0)};
+ 100%{transform: translateX(-1px) rotate(0)};
+ }
 </style>
