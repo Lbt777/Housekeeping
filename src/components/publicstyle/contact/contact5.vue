@@ -60,8 +60,6 @@
       <span>&nbsp;&nbsp;&nbsp;&nbsp;   ap e Housekeeping</span>
     </div>
     <div class="information-maps">
-
-
     </div>
     <div class="information-phon information-map">
       <p> 在线预约</p>
@@ -80,14 +78,13 @@
     font-size: 12px;
   }
 </style>
-
 <script>
 </script>
 <script>
 export default {}
 </script>
 <style lang="less" scoped>
-  @import "~static/css/common.less";
+@import "~static/css/common.less";
   .information-title{
     margin-top: 50px;
     text-align: center;

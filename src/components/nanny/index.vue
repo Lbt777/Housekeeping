@@ -313,7 +313,7 @@ export default {
       }
       .price-service tr td{
         background-color: @bglightdark;
-        padding: 10px 6px 10px 9px;
+        padding: 10px 7px 10px 6px;
         font-size: 14px;
       }
       .price-service tr:first-child td:first-child{
@@ -410,6 +410,11 @@ export default {
       .procedure ul li .procedure-contract-list:hover{
         color: @whiteColor;
         background-color: @orangeColor;
+        transition:all 0.5s linear;
+        span{
+          background:@orangeColor;
+          border-radius: 50%;
+        }
       }
       .procedure ul li span{
         display: block;
