@@ -16,7 +16,7 @@
         <div class="site-item">
             <span class="font-22">服务区域</span>
             <div class="list1">
-                <v-distpicker :province="select.province" :city="select.city" :area="select.area"></v-distpicker>
+                <v-distpicker></v-distpicker>
             </div>
         </div>
         <div class="site-item">
@@ -107,7 +107,6 @@ export default {
     return {
       value1: '',
       active: 0,
-      select: { province: '陕西省', city: '西安市', area: '区' },
       options: [{
         value: '选项1',
         label: '2小时'

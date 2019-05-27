@@ -9,9 +9,9 @@
           <el-form-item label="密码"  prop="pass">
             <el-input type="password" v-model="ruleForm.pass" autocomplete="off" placeholder="密码"></el-input>
           </el-form-item>
-          <slide-verify :l="42" :r="10" :w="310" :h="155" @success="onSuccess" @fail="onFail" @refresh="onRefresh" :slider-text="text"></slide-verify>
+          <slide-verify :l="42" :r="10" :w="310" :h="155" @success="onSuccess" @fail="onFail" @refresh="onRefresh" :slider-text="ruleForm.text"></slide-verify>
           <div class="msg">
-              <div>{{msg}}</div>
+              <div>{{ruleForm.msg}}</div>
           </div>
           <el-form-item>
             <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
@@ -47,9 +47,9 @@ export default {
       }
     }
     return {
-      msg: '',
-      text: '向右滑',
       ruleForm: {
+        msg: '',
+        text: '向右滑',
         pass: '',
         phone: ''
       },
@@ -66,11 +66,17 @@ export default {
   },
   methods: {
     submitForm (formName) {
+      let pic = this.ruleForm.msg
       this.$refs[formName].validate((valid) => {
-        if (valid) {
-          alert('submit!')
+        if (pic === '') {
+          alert('请尝试滑动验证码')
+          return
+        }
+        if (valid && pic === '验证成功') {
+          alert('登录成功!')
+          this.$router.push({path: '/'})
         } else {
-          console.log('error submit!!')
+          console.log('登录失败')
           return false
         }
       })
@@ -79,13 +85,13 @@ export default {
       this.$refs[formName].resetFields()
     },
     onSuccess () {
-      this.msg = '验证成功'
+      this.ruleForm.msg = '验证成功'
     },
     onFail () {
-      this.msg = '验证失败，请重新验证'
+      this.ruleForm.msg = '验证失败，请重新验证'
     },
     onRefresh () {
-      this.msg = '已刷新'
+      this.ruleForm.msg = '已刷新'
     }
   }
 }

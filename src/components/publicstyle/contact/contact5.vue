@@ -61,10 +61,6 @@
     </div>
     <div class="information-maps">
     </div>
-    <div class="information-phon information-map">
-      <p> 在线预约</p>
-      <span>&nbsp;&nbsp;&nbsp;&nbsp;       nline Booking</span>
-    </div>
   </div>
 </template>
 <style>

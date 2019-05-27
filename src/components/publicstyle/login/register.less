@@ -3,7 +3,7 @@
     top: 10%;
     right: 10%;
     z-index: 999999;
-    height: 430px;
+    height: 427px;
     width: 360px;
     background-color: rgba(255,255,255,.9);
     color: #555;
@@ -12,20 +12,21 @@
     /deep/.el-button.el-button--primary{
         height: 40px;
         width: 310px;
-        margin-top: 20px;
+        margin-top: 15px;
         background: @darkorangeColor;
         border: none;
     }
     a{
         float: right;
+        margin-top: 10px;
     }
     a:hover{
         color: @darkorangeColor;
     }
     .group-input{
         position: relative;
-        span{
-            float: left;
+        p{
+            text-align: left;
             margin-top: 10px;
         }
         .btns{
@@ -33,9 +34,23 @@
             position: absolute;
             top: 29px;
             right: 8px;
+            cursor: pointer;
         }
     }
 }
 .login .group-input .codes{
     margin-top: 0;
+}
+/deep/label{
+    display: none;
+}
+/deep/.el-form-item__content{
+    margin-left: 0!important;
+}
+/deep/.el-form-item__error{
+    top: 24%;
+    left: 195px;
+}
+.err /deep/.el-form-item__error{
+    top: 100%;    
 }
