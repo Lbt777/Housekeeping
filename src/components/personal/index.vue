@@ -8,10 +8,17 @@
           <div class="personal-bgimg">
             <span class="font-16">我的设置</span>
             <router-link to="/personaltab1">
-            <p>会员信息</p>
+            <p>个人信息</p>
             </router-link>
             <router-link to="/personaltab2">
               <p>管理地址</p>
+            </router-link>
+            <div class="hr"></div>
+          </div>
+          <div class="personal-bgimgs">
+            <span class="font-16">购物车</span>
+            <router-link to="/personaltab3">
+            <p>订单列表</p>
             </router-link>
             <div class="hr"></div>
           </div>
@@ -142,5 +149,24 @@ export default {
   .personal-b-r{
     width: 65%;
   }
+.personal-bgimgs{
+  margin-top: 20px;
+  background: url("./image/3.png") no-repeat;
+  line-height: 35px;
+  span{
+    margin-left: 40px;
+  }
+  p{
+    padding-left: 40px;
+  }
+  p:hover{
+    color: @lightorangeColor;
+  }
+  .hr{
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 
 </style>

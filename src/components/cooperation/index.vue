@@ -1,8 +1,6 @@
 <template>
 <div class="c">
     <div class="container">
-      <!--<div class="consultation">&lt;!&ndash;咨询加盟&ndash;&gt;-->
-      <!--</div>&lt;!&ndash;咨询加盟&ndash;&gt;-->
       <div class="opportunity"><!--市场机遇-->
         <p>前所未有的市场机遇</p>
         <p class="font-30">80%的城市家庭需要家政，全国市场已超万亿</p>
@@ -396,7 +394,16 @@
       <div class="strategy opportunity"><!--战略合作伙伴-->
         <p>战略合作伙伴</p>
         <p class="font-30">大牌电商、实力企业长期合作</p>
-        <img src="./image/hzhb7.png">
+        <ul>
+          <li><img src="./image/con7.png"/></li>
+          <li><img src="./image/con2.png"/></li>
+          <li><img src="./image/con3.png"/></li>
+          <li><img src="./image/con8.png"/></li>
+          <li><img src="./image/con1.png"/></li>
+          <li><img src="./image/con6.png"/></li>
+          <li><img src="./image/con4.png"/></li>
+          <li><img src="./image/con5.png"/></li>
+        </ul>
       </div><!--战略合作伙伴-->
     </div>
   </div>
@@ -410,10 +417,6 @@ export default {
   .c{
     background: @whiteColor;
   }
-  .consultation{
-    background: #ffa800;
-    height: 200px;
-  }
   .opportunity{
     padding-top: 20px;
     margin: 80px 0 80px 0;
@@ -425,6 +428,16 @@ export default {
     }
     p:last-child{
       color: #cccccc;
+    }
+    ul li{
+      width: 25%;
+    }
+    ul li img{
+      transition:all 1s;
+      cursor: pointer;
+    }
+    ul li img:hover {
+      -webkit-transform: rotateY(180deg);
     }
   }
   .synopsis-l,.synopsis-r{

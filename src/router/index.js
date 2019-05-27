@@ -35,8 +35,12 @@ import security from 'com/security'
 import personal from 'com/personal'
 // 个人中心页面tab1
 import personaltab1 from 'com/publicstyle/personaltab/personaltab1'
-// 个人中心页面tab
+// 个人中心页面tab2
 import personaltab2 from 'com/publicstyle/personaltab/personaltab2'
+// 个人中心页面tab3
+import personaltab3 from 'com/publicstyle/personaltab/personaltab3'
+// 个人中心页面tab4
+import personaltab4 from 'com/publicstyle/personaltab/personaltab4'
 // 在线预约页面
 import subscribe from 'com/subscribe'
 // 在线预约子路由页面1
@@ -259,6 +263,34 @@ export default new Router({
           components: {
             default: personaltab2,
             personaltab2: personaltab2
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: personaltab3,
+            personaltab2: personaltab3
+          }
+        },
+        {
+          path: '/personaltab3',
+          components: {
+            default: personaltab3,
+            personaltab2: personaltab3
+          }
+        },
+        {
+          path: '',
+          components: {
+            default: personaltab4,
+            personaltab2: personaltab4
+          }
+        },
+        {
+          path: '/personaltab4',
+          components: {
+            default: personaltab4,
+            personaltab2: personaltab4
           }
         }
       ],
